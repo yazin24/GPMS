@@ -516,7 +516,7 @@
 "add", new XVar( "type", "add",
 "label", new XVar( "type", 0,
 "text", "New" ),
-"background", "#efb11d",
+"background", "#b95050",
 "buttonSize", "small",
 "icon", new XVar( "fa", "plus-square" ) ),
 "grid_edit", new XVar( "type", "grid_edit" ),
