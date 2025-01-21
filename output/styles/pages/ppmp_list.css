@@ -1,0 +1,82 @@
+[data-cellid="left_c0"][data-page="ppmp_list"][data-cellid="left_c0"][data-page="ppmp_list"][data-cellid="left_c0"][data-page="ppmp_list"] {
+  font-weight: bold;
+}
+[data-cellid="left_c1"][data-page="ppmp_list"][data-cellid="left_c1"][data-page="ppmp_list"][data-cellid="left_c1"][data-page="ppmp_list"] {
+  font-weight: bold;
+}
+[data-cellid="grid_headcell_field3"][data-page="ppmp_list"][data-cellid="grid_headcell_field3"][data-page="ppmp_list"][data-cellid="grid_headcell_field3"][data-page="ppmp_list"] {
+  width: 25%;
+}
+[data-cellid="grid_cell_field3"][data-page="ppmp_list"][data-cellid="grid_cell_field3"][data-page="ppmp_list"][data-cellid="grid_cell_field3"][data-page="ppmp_list"] {
+  width: 25%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+[data-cellid="grid_footcell_field3"][data-page="ppmp_list"][data-cellid="grid_footcell_field3"][data-page="ppmp_list"][data-cellid="grid_footcell_field3"][data-page="ppmp_list"] {
+  width: 25%;
+  white-space: nowrap;
+}
+[data-cellid="grid_headcell_field7"][data-page="ppmp_list"][data-cellid="grid_headcell_field7"][data-page="ppmp_list"][data-cellid="grid_headcell_field7"][data-page="ppmp_list"] {
+  width: 20%;
+}
+[data-cellid="grid_cell_field7"][data-page="ppmp_list"][data-cellid="grid_cell_field7"][data-page="ppmp_list"][data-cellid="grid_cell_field7"][data-page="ppmp_list"] {
+  width: 20%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+[data-cellid="grid_footcell_field7"][data-page="ppmp_list"][data-cellid="grid_footcell_field7"][data-page="ppmp_list"][data-cellid="grid_footcell_field7"][data-page="ppmp_list"] {
+  width: 20%;
+  white-space: nowrap;
+}
+[data-cellid="grid_headcell_field30"][data-page="ppmp_list"][data-cellid="grid_headcell_field30"][data-page="ppmp_list"][data-cellid="grid_headcell_field30"][data-page="ppmp_list"] {
+  width: 20%;
+}
+[data-cellid="grid_cell_field30"][data-page="ppmp_list"][data-cellid="grid_cell_field30"][data-page="ppmp_list"][data-cellid="grid_cell_field30"][data-page="ppmp_list"] {
+  width: 20%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+[data-cellid="grid_footcell_field30"][data-page="ppmp_list"][data-cellid="grid_footcell_field30"][data-page="ppmp_list"][data-cellid="grid_footcell_field30"][data-page="ppmp_list"] {
+  width: 20%;
+  white-space: nowrap;
+}
+[data-cellid="grid_headcell_field2"][data-page="ppmp_list"][data-cellid="grid_headcell_field2"][data-page="ppmp_list"][data-cellid="grid_headcell_field2"][data-page="ppmp_list"] {
+  width: 15%;
+}
+[data-cellid="grid_cell_field2"][data-page="ppmp_list"][data-cellid="grid_cell_field2"][data-page="ppmp_list"][data-cellid="grid_cell_field2"][data-page="ppmp_list"] {
+  width: 15%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+[data-cellid="grid_footcell_field2"][data-page="ppmp_list"][data-cellid="grid_footcell_field2"][data-page="ppmp_list"][data-cellid="grid_footcell_field2"][data-page="ppmp_list"] {
+  width: 15%;
+  white-space: nowrap;
+}
+[data-cellid="grid_headcell_details"][data-page="ppmp_list"][data-cellid="grid_headcell_details"][data-page="ppmp_list"][data-cellid="grid_headcell_details"][data-page="ppmp_list"] {
+  width: 20%;
+}
+[data-cellid="grid_cell_details"][data-page="ppmp_list"][data-cellid="grid_cell_details"][data-page="ppmp_list"][data-cellid="grid_cell_details"][data-page="ppmp_list"] {
+  width: 20%;
+  white-space: nowrap;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+[data-cellid="grid_footcell_details"][data-page="ppmp_list"][data-cellid="grid_footcell_details"][data-page="ppmp_list"][data-cellid="grid_footcell_details"][data-page="ppmp_list"] {
+  width: 20%;
+}
+[data-cellid="grid_headcell_icons"][data-page="ppmp_list"][data-cellid="grid_headcell_icons"][data-page="ppmp_list"][data-cellid="grid_headcell_icons"][data-page="ppmp_list"] {
+  width: 30px;
+}
+[data-cellid="grid_cell_icons"][data-page="ppmp_list"][data-cellid="grid_cell_icons"][data-page="ppmp_list"][data-cellid="grid_cell_icons"][data-page="ppmp_list"] {
+  white-space: nowrap;
+}
+[data-page="ppmp_list"][data-itemid="add"] > .btn {
+  background-color: #efb11d;
+  background-image: none;
+  text-shadow: none;
+}
+[data-page="ppmp_list"][data-itemid="page_image_ash8f23hr"] {
+  width: 400px;
+}
+
+

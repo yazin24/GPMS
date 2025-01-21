@@ -1,0 +1,2 @@
+
+Runner.pages.PageSettings.addPageEvent('dbo.Observer',Runner.pages.constants.PAGE_ADD,"afterPageReady",function(pageObj,proxy,pageid,inlineRow,inlineObject,row){if(proxy['saved']){alert('Data has been successfully saved!');};});

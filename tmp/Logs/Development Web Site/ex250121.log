@@ -1,0 +1,13 @@
+#Software: Microsoft Internet Information Services 10.0
+#Version: 1.0
+#Date: 2025-01-21 07:03:38
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status time-taken
+2025-01-21 07:03:38 127.0.0.1 GET / - 8086 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/108.0.0.0+Safari/537.36 - 302 0 0 13970
+2025-01-21 07:03:51 127.0.0.1 GET /procurementmonitoring/list page=list 8086 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/108.0.0.0+Safari/537.36 - 200 0 0 12922
+2025-01-21 07:03:57 127.0.0.1 GET /philippinebiddingdocument/list page=list 8086 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/108.0.0.0+Safari/537.36 - 200 0 0 5123
+2025-01-21 07:03:59 127.0.0.1 GET /scheduleofrequirements/list page=list 8086 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/108.0.0.0+Safari/537.36 - 200 0 0 2777
+2025-01-21 07:04:02 127.0.0.1 GET /technicalspecifications/list page=list 8086 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/108.0.0.0+Safari/537.36 - 200 0 0 2586
+2025-01-21 07:04:04 127.0.0.1 GET /specialconditionsofcontract/list page=list 8086 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/108.0.0.0+Safari/537.36 - 200 0 0 2419
+2025-01-21 07:04:09 127.0.0.1 GET /bidsandawardscommittee/list page=list 8086 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/108.0.0.0+Safari/537.36 - 200 0 0 4379
+2025-01-21 07:04:12 127.0.0.1 GET /headofprocuringentity/list page=list 8086 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/108.0.0.0+Safari/537.36 - 200 0 0 3151
+2025-01-21 07:04:13 127.0.0.1 GET /systemselections/list page=list 8086 - 127.0.0.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/108.0.0.0+Safari/537.36 - 200 0 0 1541

@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projects\\GPMS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Projects\\GPMS\\GPMS.netr||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GPMS.netr||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GPMS.netr",
+              "DocumentMoniker": "C:\\Projects\\GPMS\\GPMS.netr",
+              "RelativeDocumentMoniker": "GPMS.netr",
+              "ToolTip": "C:\\Projects\\GPMS\\GPMS.netr",
+              "RelativeToolTip": "GPMS.netr",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAhAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMgSURBVDhPdZNbbBRVGMd/c9tbu9ud0pbuWiulFgpKTExr0JigaLhETOqDQbkUQ0iIMZJo9EGRFPSJBwKJIcKDmugDmCglYoCoCIYKMSUalFu79LZSJNstu93t7kznsuPMSBt94J98yTnn\u002B3//813OEV5c0fxB9xrtQ0lE4D448Uvg74u3FiXMyRFve2BobPQt3\u002BE4jrBna3Pvzvd2dA1NhInNa\u002BVmusB4xmB89DIvb3qDI5/vY33bMTaf3YHdshbTtOjf/fjcZXJFD1LRwmTtZTiVerKFK74jlPudiHaTRO576h2VV0NHOXgjj6MEWdX58IGGqMDV29bX0oq25CutdfXtp0/0gqiQGhwgEo1jjQ8giwGmhwdoq4oxnKnw01M92AseY53dv3zLYnO55Yiq8ObKpb0b2qNdVgUENzG74mA7bmqiwM9TETJyHYoEE2WbX8WFOMFq3tG\u002BZbEq8U2qdFxWlq0kvv11P\u002B3/4sczZ/g0VYeoTWLXtvqBYmaQj56U6Oj80ucohz9BVFWVxAPNVMfdmyI1RNUG305dL7BEv8ampgJi\u002BjeEzIjbdJnT5y/5XC9GK2vPip6SbpgYhkGpVMayDN9e6mhi52vrODmoYSafwK5KoIz20Sd0sKHnM1Zv38O43VjjC3hIzK8nHo\u002BRbGzwbcvmjZh6iUlnvluGgZxNs3fbKtbUZel4sJqtzz9K7bxa5HvxTNzNUyiWkcQ5TY5814eUL0EwiZL7i8amF9j19DNuoysEAwEyB/cfn2PLkoTkPkdFln2b0TUu3NARKiHkO39gR9rZd9gdteP43FmIY2PpLm\u002Bh1kSpioQ4\u002BtUx9u7/gnd7DjEjtRATdHZvXEQ4d5U/sw9x1p2Ox53FXAa5qaJbwjQ/nLvM\u002Bf4014amiZWv8HZ3J8\u002BtXsv73UsRdZ307bs\u002BdxZyOBxOBxWluWiabl1BDn28657rX5S1GXcqFg2NCaTSIGo06fcgEgr5frE4lT95Kz1CKZ/F1gsUcxP/s9kz0bEQjBxBueJzvZihVOqO8Ehbi\u002BIKLfHEfMn7I0Bg4SmM4W3u2vvX7uPn\u002Bj\u002BUTkwgdb7PlQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-08-18T10:26:16.259Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

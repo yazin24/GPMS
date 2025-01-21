@@ -1,0 +1,101 @@
+[data-cellid="left_c0"][data-page="procuringentity_edit"][data-cellid="left_c0"][data-page="procuringentity_edit"][data-cellid="left_c0"][data-page="procuringentity_edit"] {
+  font-weight: bold;
+}
+[data-cellid="left_c1"][data-page="procuringentity_edit"][data-cellid="left_c1"][data-page="procuringentity_edit"][data-cellid="left_c1"][data-page="procuringentity_edit"] {
+  font-weight: bold;
+}
+[data-cellid="top_c1"][data-page="procuringentity_edit"][data-cellid="top_c1"][data-page="procuringentity_edit"][data-cellid="top_c1"][data-page="procuringentity_edit"] {
+  padding-top: 15px;
+  padding-left: 50px;
+  padding-bottom: 75px;
+}
+[data-cellid="grid_c3"][data-page="procuringentity_edit"][data-cellid="grid_c3"][data-page="procuringentity_edit"][data-cellid="grid_c3"][data-page="procuringentity_edit"] {
+  font-size: 12px;
+  padding-left: 35px;
+}
+[data-page="procuringentity_edit"][data-itemid="edit_save"] > .btn {
+  background-color: #efb11d;
+  background-image: none;
+  text-shadow: none;
+}
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"] > * > input,
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"] > * > textarea,
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"] > * > select,
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"] > * > * > select,
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"] > .form-control-static,
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"] > [id^=view],
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"] label,
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field1"] > * > .r-readonly-control {
+  font-size: 10px;
+}
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"] > * > input,
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"] > * > textarea,
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"] > * > select,
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"] > * > * > select,
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"] > .form-control-static,
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"] > [id^=view],
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"] label,
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field2"] > * > .r-readonly-control {
+  font-size: 10px;
+}
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"] > * > input,
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"] > * > textarea,
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"] > * > select,
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"] > * > * > select,
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"] > .form-control-static,
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"] > [id^=view],
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"] label,
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field3"] > * > .r-readonly-control {
+  font-size: 10px;
+}
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"] > * > input,
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"] > * > textarea,
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"] > * > select,
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"] > * > * > select,
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"] > .form-control-static,
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"] > [id^=view],
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"] label,
+[data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"][data-page="procuringentity_edit"][data-itemid="integrated_edit_field4"] > * > .r-readonly-control {
+  font-size: 10px;
+}
+[data-page="procuringentity_edit"][data-itemid="page_image_ash8f23hr"] {
+  width: 400px;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid transparent;
+    background-color: #efb11d;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus {
+    border: none;
+    color: #ffffff;
+}
+
+.r-grid > .panel > .panel-heading {
+    padding-left: 0;
+}
+
+.panel.with-tabs > .panel-heading {
+    padding: 0;
+    border-bottom: none;
+}
+/*.nav-tabs {
+    border-bottom: 1px solid transparent;
+    background-color: #efb11d;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus {
+    border: none;
+    -webkit-box-shadow: inset 0 0px 0 #efb11d;
+    color: #ffffff;
+}
+
+.r-grid > .panel > .panel-heading {
+    padding-left: 0;
+}
+
+.panel.with-tabs > .panel-heading {
+    padding: 0;
+    border-bottom: none;
+}*/

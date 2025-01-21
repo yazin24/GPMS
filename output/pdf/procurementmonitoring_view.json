@@ -1,0 +1,2569 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'above-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+					colSpan: 2,
+		
+			
+			// [left, top, right, bottom]
+	margin: [ 0, 0, 0, 15 ],
+		
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+																		{ 
+				cellId: 'c1',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"*", 
+							{END col_grid_0}
+					 ],	
+		
+			heights: [
+								{BEGIN row_grid_0}
+						
+			"%",
+						{END row_grid_0}
+			 
+				],
+	
+		body: [
+				
+				{BEGIN row_grid_0}
+				[
+																{BEGIN cellblock_grid_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section2',
+			widths: ['*'],
+			body: [
+				[{text: 'View Record', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section2_0}
+									"*", 
+								{END col_section2_0}
+															{BEGIN col_section2_1}
+									"*", 
+								{END col_section2_1}
+															{BEGIN col_section2_2}
+									"*", 
+								{END col_section2_2}
+															{BEGIN col_section2_3}
+									"*", 
+								{END col_section2_3}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section2_0}
+				[
+																{BEGIN cellblock_section2_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			fieldName: 'PpmpId',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring PpmpId }","hidden":"{$item_hide_integrated_edit_field59}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c4}
+																							{BEGIN cellblock_section2_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			fieldName: 'PpmpId',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$PpmpId_pdfvalue},"hidden":"{$item_hide_integrated_edit_field31}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c2}
+																							{BEGIN cellblock_section2_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			fieldName: 'CodePAP',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring CodePAP }","hidden":"{$item_hide_integrated_edit_field60}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c}
+																							{BEGIN cellblock_section2_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			fieldName: 'CodePAP',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$CodePAP_pdfvalue},"hidden":"{$item_hide_integrated_edit_field}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c3}
+											],
+				{END row_section2_0}
+						{BEGIN row_section2_1}
+				[
+																{BEGIN cellblock_section2_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+			fieldName: 'ModeOfProcurement',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring ModeOfProcurement }","hidden":"{$item_hide_integrated_edit_field61}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c5}
+																							{BEGIN cellblock_section2_c6}
+{
+	cellId: 'c6',
+	col:0,
+	row:0,
+			fieldName: 'ModeOfProcurement',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$ModeOfProcurement_pdfvalue},"hidden":"{$item_hide_integrated_edit_field2}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c6}
+																							{BEGIN cellblock_section2_c7}
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+			fieldName: 'IsthisAnEarlyProcurementActivity',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring IsthisAnEarlyProcurementActivity }","hidden":"{$item_hide_integrated_edit_field62}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c7}
+																							{BEGIN cellblock_section2_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			fieldName: 'IsthisAnEarlyProcurementActivity',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$IsthisAnEarlyProcurementActivity_pdfvalue},"hidden":"{$item_hide_integrated_edit_field1}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c8}
+											],
+				{END row_section2_1}
+						{BEGIN row_section2_2}
+				[
+																{BEGIN cellblock_section2_c9}
+{
+	cellId: 'c9',
+	col:0,
+	row:0,
+			fieldName: 'PreProcConference',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring PreProcConference }","hidden":"{$item_hide_integrated_edit_field63}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c9}
+																							{BEGIN cellblock_section2_c10}
+{
+	cellId: 'c10',
+	col:0,
+	row:0,
+			fieldName: 'PreProcConference',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$PreProcConference_pdfvalue},"hidden":"{$item_hide_integrated_edit_field3}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c10}
+																							{BEGIN cellblock_section2_c11}
+{
+	cellId: 'c11',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c11}
+																							{BEGIN cellblock_section2_c12}
+{
+	cellId: 'c12',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c12}
+											],
+				{END row_section2_2}
+						{BEGIN row_section2_3}
+				[
+																{BEGIN cellblock_section2_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_section2_c1}
+			colSpan: {$colspan_section2_c1},
+			{END colspan_section2_c1}
+		
+		
+	
+			
+	
+			"stack": [
+		
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section',
+			widths: ['*'],
+			body: [
+				[{text: 'General Information', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section_0}
+									"*", 
+								{END col_section_0}
+															{BEGIN col_section_1}
+									"*", 
+								{END col_section_1}
+															{BEGIN col_section_2}
+									"*", 
+								{END col_section_2}
+															{BEGIN col_section_3}
+									"*", 
+								{END col_section_3}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section_0}
+				[
+																{BEGIN cellblock_section_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			fieldName: 'SourceOfFunds',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring SourceOfFunds }","hidden":"{$item_hide_integrated_edit_field44}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c4}
+																							{BEGIN cellblock_section_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			fieldName: 'SourceOfFunds',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$SourceOfFunds_pdfvalue},"hidden":"{$item_hide_integrated_edit_field29}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c2}
+																							{BEGIN cellblock_section_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			fieldName: 'TotalABCPhp',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring TotalABCPhp }","hidden":"{$item_hide_integrated_edit_field45}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c}
+																							{BEGIN cellblock_section_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			fieldName: 'TotalABCPhp',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$TotalABCPhp_pdfvalue},"hidden":"{$item_hide_integrated_edit_field30}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c3}
+											],
+				{END row_section_0}
+						{BEGIN row_section_1}
+				[
+																{BEGIN cellblock_section_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+			fieldName: 'ABCMOOE',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring ABCMOOE }","hidden":"{$item_hide_integrated_edit_field46}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c5}
+																							{BEGIN cellblock_section_c6}
+{
+	cellId: 'c6',
+	col:0,
+	row:0,
+			fieldName: 'ABCMOOE',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$ABCMOOE_pdfvalue},"hidden":"{$item_hide_integrated_edit_field32}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c6}
+																							{BEGIN cellblock_section_c7}
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+			fieldName: 'ABCCO',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring ABCCO }","hidden":"{$item_hide_integrated_edit_field47}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c7}
+																							{BEGIN cellblock_section_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			fieldName: 'ABCCO',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$ABCCO_pdfvalue},"hidden":"{$item_hide_integrated_edit_field33}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c8}
+											],
+				{END row_section_1}
+						{BEGIN row_section_2}
+				[
+																{BEGIN cellblock_section_c9}
+{
+	cellId: 'c9',
+	col:0,
+	row:0,
+			fieldName: 'TotalContractCostPhp',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring TotalContractCostPhp }","hidden":"{$item_hide_integrated_edit_field48}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c9}
+																							{BEGIN cellblock_section_c10}
+{
+	cellId: 'c10',
+	col:0,
+	row:0,
+			fieldName: 'TotalContractCostPhp',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$TotalContractCostPhp_pdfvalue},"hidden":"{$item_hide_integrated_edit_field34}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c10}
+																							{BEGIN cellblock_section_c11}
+{
+	cellId: 'c11',
+	col:0,
+	row:0,
+			fieldName: 'ContractCostMOOE',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring ContractCostMOOE }","hidden":"{$item_hide_integrated_edit_field49}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c11}
+																							{BEGIN cellblock_section_c12}
+{
+	cellId: 'c12',
+	col:0,
+	row:0,
+			fieldName: 'ContractCostMOOE',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$ContractCostMOOE_pdfvalue},"hidden":"{$item_hide_integrated_edit_field35}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c12}
+											],
+				{END row_section_2}
+						{BEGIN row_section_3}
+				[
+																{BEGIN cellblock_section_c13}
+{
+	cellId: 'c13',
+	col:0,
+	row:0,
+			fieldName: 'ContractCostCO',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring ContractCostCO }","hidden":"{$item_hide_integrated_edit_field50}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c13}
+																							{BEGIN cellblock_section_c14}
+{
+	cellId: 'c14',
+	col:0,
+	row:0,
+			fieldName: 'ContractCostCO',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$ContractCostCO_pdfvalue},"hidden":"{$item_hide_integrated_edit_field36}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c14}
+																							{BEGIN cellblock_section_c15}
+{
+	cellId: 'c15',
+	col:0,
+	row:0,
+			fieldName: 'ListOfInvitedObservers',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring ListOfInvitedObservers }","hidden":"{$item_hide_integrated_edit_field51}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c15}
+																							{BEGIN cellblock_section_c16}
+{
+	cellId: 'c16',
+	col:0,
+	row:0,
+			fieldName: 'ListOfInvitedObservers',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$ListOfInvitedObservers_pdfvalue},"hidden":"{$item_hide_integrated_edit_field37}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c16}
+											],
+				{END row_section_3}
+						{BEGIN row_section_4}
+				[
+																{BEGIN cellblock_section_c17}
+{
+	cellId: 'c17',
+	col:0,
+	row:0,
+			fieldName: 'PreBidConfObservers',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring PreBidConfObservers }","hidden":"{$item_hide_integrated_edit_field52}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c17}
+																							{BEGIN cellblock_section_c18}
+{
+	cellId: 'c18',
+	col:0,
+	row:0,
+			fieldName: 'PreBidConfObservers',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$PreBidConfObservers_pdfvalue},"hidden":"{$item_hide_integrated_edit_field38}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c18}
+																							{BEGIN cellblock_section_c19}
+{
+	cellId: 'c19',
+	col:0,
+	row:0,
+			fieldName: 'EligibilityCheckObservers',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring EligibilityCheckObservers }","hidden":"{$item_hide_integrated_edit_field53}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c19}
+																							{BEGIN cellblock_section_c20}
+{
+	cellId: 'c20',
+	col:0,
+	row:0,
+			fieldName: 'EligibilityCheckObservers',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$EligibilityCheckObservers_pdfvalue},"hidden":"{$item_hide_integrated_edit_field39}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c20}
+											],
+				{END row_section_4}
+						{BEGIN row_section_5}
+				[
+																{BEGIN cellblock_section_c21}
+{
+	cellId: 'c21',
+	col:0,
+	row:0,
+			fieldName: 'SubOpenOfBidsObservers',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring SubOpenOfBidsObservers }","hidden":"{$item_hide_integrated_edit_field54}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c21}
+																							{BEGIN cellblock_section_c22}
+{
+	cellId: 'c22',
+	col:0,
+	row:0,
+			fieldName: 'SubOpenOfBidsObservers',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$SubOpenOfBidsObservers_pdfvalue},"hidden":"{$item_hide_integrated_edit_field40}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c22}
+																							{BEGIN cellblock_section_c23}
+{
+	cellId: 'c23',
+	col:0,
+	row:0,
+			fieldName: 'BidEvaluationObservers',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring BidEvaluationObservers }","hidden":"{$item_hide_integrated_edit_field55}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c23}
+																							{BEGIN cellblock_section_c24}
+{
+	cellId: 'c24',
+	col:0,
+	row:0,
+			fieldName: 'BidEvaluationObservers',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$BidEvaluationObservers_pdfvalue},"hidden":"{$item_hide_integrated_edit_field41}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c24}
+											],
+				{END row_section_5}
+						{BEGIN row_section_6}
+				[
+																{BEGIN cellblock_section_c25}
+{
+	cellId: 'c25',
+	col:0,
+	row:0,
+			fieldName: 'PostQualObservers',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring PostQualObservers }","hidden":"{$item_hide_integrated_edit_field56}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c25}
+																							{BEGIN cellblock_section_c26}
+{
+	cellId: 'c26',
+	col:0,
+	row:0,
+			fieldName: 'PostQualObservers',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$PostQualObservers_pdfvalue},"hidden":"{$item_hide_integrated_edit_field28}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c26}
+																							{BEGIN cellblock_section_c27}
+{
+	cellId: 'c27',
+	col:0,
+	row:0,
+			fieldName: 'DeliveryCompletionAcceptanceIfApplicable',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring DeliveryCompletionAcceptanceIfApplicable }","hidden":"{$item_hide_integrated_edit_field57}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c27}
+																							{BEGIN cellblock_section_c28}
+{
+	cellId: 'c28',
+	col:0,
+	row:0,
+			fieldName: 'DeliveryCompletionAcceptanceIfApplicable',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$DeliveryCompletionAcceptanceIfApplicable_pdfvalue},"hidden":"{$item_hide_integrated_edit_field42}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c28}
+											],
+				{END row_section_6}
+						{BEGIN row_section_7}
+				[
+																{BEGIN cellblock_section_c29}
+{
+	cellId: 'c29',
+	col:0,
+	row:0,
+			fieldName: 'RemarksExplainingChangesFromTheAPP',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring RemarksExplainingChangesFromTheAPP }","hidden":"{$item_hide_integrated_edit_field58}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c29}
+																							{BEGIN cellblock_section_c30}
+{
+	cellId: 'c30',
+	col:0,
+	row:0,
+			fieldName: 'RemarksExplainingChangesFromTheAPP',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$RemarksExplainingChangesFromTheAPP_pdfvalue},"hidden":"{$item_hide_integrated_edit_field43}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c30}
+																							{BEGIN cellblock_section_c31}
+{
+	cellId: 'c31',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c31}
+																							{BEGIN cellblock_section_c32}
+{
+	cellId: 'c32',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c32}
+											],
+				{END row_section_7}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+ 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section1',
+			widths: ['*'],
+			body: [
+				[{text: 'Others', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section1_0}
+									"*", 
+								{END col_section1_0}
+															{BEGIN col_section1_1}
+									"*", 
+								{END col_section1_1}
+															{BEGIN col_section1_2}
+									"*", 
+								{END col_section1_2}
+															{BEGIN col_section1_3}
+									"*", 
+								{END col_section1_3}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section1_0}
+				[
+																{BEGIN cellblock_section1_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			fieldName: 'AdsPostOfIB',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring AdsPostOfIB }","hidden":"{$item_hide_integrated_edit_field16}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c4}
+																							{BEGIN cellblock_section1_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			fieldName: 'AdsPostOfIB',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$AdsPostOfIB_pdfvalue},"hidden":"{$item_hide_integrated_edit_field4}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c2}
+																							{BEGIN cellblock_section1_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			fieldName: 'PreBidConf',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring PreBidConf }","hidden":"{$item_hide_integrated_edit_field17}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c}
+																							{BEGIN cellblock_section1_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			fieldName: 'PreBidConf',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$PreBidConf_pdfvalue},"hidden":"{$item_hide_integrated_edit_field5}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c3}
+											],
+				{END row_section1_0}
+						{BEGIN row_section1_1}
+				[
+																{BEGIN cellblock_section1_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+			fieldName: 'EligibilityCheck',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring EligibilityCheck }","hidden":"{$item_hide_integrated_edit_field18}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c5}
+																							{BEGIN cellblock_section1_c6}
+{
+	cellId: 'c6',
+	col:0,
+	row:0,
+			fieldName: 'EligibilityCheck',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$EligibilityCheck_pdfvalue},"hidden":"{$item_hide_integrated_edit_field6}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c6}
+																							{BEGIN cellblock_section1_c7}
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+			fieldName: 'SubOpenOfBids',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring SubOpenOfBids }","hidden":"{$item_hide_integrated_edit_field19}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c7}
+																							{BEGIN cellblock_section1_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			fieldName: 'SubOpenOfBids',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$SubOpenOfBids_pdfvalue},"hidden":"{$item_hide_integrated_edit_field7}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c8}
+											],
+				{END row_section1_1}
+						{BEGIN row_section1_2}
+				[
+																{BEGIN cellblock_section1_c9}
+{
+	cellId: 'c9',
+	col:0,
+	row:0,
+			fieldName: 'BidEvaluation',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring BidEvaluation }","hidden":"{$item_hide_integrated_edit_field20}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c9}
+																							{BEGIN cellblock_section1_c10}
+{
+	cellId: 'c10',
+	col:0,
+	row:0,
+			fieldName: 'BidEvaluation',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$BidEvaluation_pdfvalue},"hidden":"{$item_hide_integrated_edit_field8}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c10}
+																							{BEGIN cellblock_section1_c11}
+{
+	cellId: 'c11',
+	col:0,
+	row:0,
+			fieldName: 'PostQual',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring PostQual }","hidden":"{$item_hide_integrated_edit_field21}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c11}
+																							{BEGIN cellblock_section1_c12}
+{
+	cellId: 'c12',
+	col:0,
+	row:0,
+			fieldName: 'PostQual',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$PostQual_pdfvalue},"hidden":"{$item_hide_integrated_edit_field9}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c12}
+											],
+				{END row_section1_2}
+						{BEGIN row_section1_3}
+				[
+																{BEGIN cellblock_section1_c13}
+{
+	cellId: 'c13',
+	col:0,
+	row:0,
+			fieldName: 'DateOfBACResolutionRecommendingAward',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring DateOfBACResolutionRecommendingAward }","hidden":"{$item_hide_integrated_edit_field22}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c13}
+																							{BEGIN cellblock_section1_c14}
+{
+	cellId: 'c14',
+	col:0,
+	row:0,
+			fieldName: 'DateOfBACResolutionRecommendingAward',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$DateOfBACResolutionRecommendingAward_pdfvalue},"hidden":"{$item_hide_integrated_edit_field10}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c14}
+																							{BEGIN cellblock_section1_c15}
+{
+	cellId: 'c15',
+	col:0,
+	row:0,
+			fieldName: 'NoticeOfAward',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring NoticeOfAward }","hidden":"{$item_hide_integrated_edit_field23}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c15}
+																							{BEGIN cellblock_section1_c16}
+{
+	cellId: 'c16',
+	col:0,
+	row:0,
+			fieldName: 'NoticeOfAward',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$NoticeOfAward_pdfvalue},"hidden":"{$item_hide_integrated_edit_field11}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c16}
+											],
+				{END row_section1_3}
+						{BEGIN row_section1_4}
+				[
+																{BEGIN cellblock_section1_c17}
+{
+	cellId: 'c17',
+	col:0,
+	row:0,
+			fieldName: 'ContractSigning',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring ContractSigning }","hidden":"{$item_hide_integrated_edit_field24}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c17}
+																							{BEGIN cellblock_section1_c18}
+{
+	cellId: 'c18',
+	col:0,
+	row:0,
+			fieldName: 'ContractSigning',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$ContractSigning_pdfvalue},"hidden":"{$item_hide_integrated_edit_field12}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c18}
+																							{BEGIN cellblock_section1_c19}
+{
+	cellId: 'c19',
+	col:0,
+	row:0,
+			fieldName: 'NoticeToProceed',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring NoticeToProceed }","hidden":"{$item_hide_integrated_edit_field25}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c19}
+																							{BEGIN cellblock_section1_c20}
+{
+	cellId: 'c20',
+	col:0,
+	row:0,
+			fieldName: 'NoticeToProceed',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$NoticeToProceed_pdfvalue},"hidden":"{$item_hide_integrated_edit_field13}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c20}
+											],
+				{END row_section1_4}
+						{BEGIN row_section1_5}
+				[
+																{BEGIN cellblock_section1_c21}
+{
+	cellId: 'c21',
+	col:0,
+	row:0,
+			fieldName: 'DeliveryCompletion',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring DeliveryCompletion }","hidden":"{$item_hide_integrated_edit_field26}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c21}
+																							{BEGIN cellblock_section1_c22}
+{
+	cellId: 'c22',
+	col:0,
+	row:0,
+			fieldName: 'DeliveryCompletion',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$DeliveryCompletion_pdfvalue},"hidden":"{$item_hide_integrated_edit_field14}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c22}
+																							{BEGIN cellblock_section1_c23}
+{
+	cellId: 'c23',
+	col:0,
+	row:0,
+			fieldName: 'InspectionAndAcceptance',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_ProcurementMonitoring InspectionAndAcceptance }","hidden":"{$item_hide_integrated_edit_field27}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c23}
+																							{BEGIN cellblock_section1_c24}
+{
+	cellId: 'c24',
+	col:0,
+	row:0,
+			fieldName: 'InspectionAndAcceptance',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$InspectionAndAcceptance_pdfvalue},"hidden":"{$item_hide_integrated_edit_field15}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c24}
+											],
+				{END row_section1_5}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c1}
+																		{ 
+				cellId: 'c1',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c1',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c1',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_section2_3}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c3}
+											],
+				{END row_grid_0}
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_view_back_list}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+			]
+};
+
+pdfFonts = {$pdfFonts};
+  

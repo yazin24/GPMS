@@ -1,0 +1,829 @@
+﻿@using runnerDotNet;
+@{
+ XTempl Model = this.Model;
+ if(ViewBag != null && ViewBag.xt != null)
+ {
+  Model = ViewBag.xt;
+  if(Model != null)
+  {
+   Model.currentViewContext = ViewContext;
+  }
+ }
+ string webRootPath = "";
+}
+
+<!doctype html>@(new HtmlString(MVCFunctions.GetBuferContentAndClearBufer()))
+<HTML @(Model.displayVar("html_attrs"))>
+	<head>
+				<META http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<META name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@(Model.displayVar("pagetitle"))</title>
+	<META http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<BASE href="@(Model.displayVar("projectPath"))" />
+		<LINK REL="stylesheet" href="styles/default.css?@(Model.displayVar("wizardBuildKey"))" type="text/css" />
+	@foreach (string _rtlCSS in Model.GetSection("rtlCSS", this)){
+	<LINK REL="stylesheet" href="styles/defaultRTL.css?@(Model.displayVar("wizardBuildKey"))" type="text/css" />
+	}
+	@foreach (string _styleCSSFiles in Model.GetSection("styleCSSFiles", this)){
+	<LINK REL="stylesheet" href="@(Model.displayVar("stylepath"))" type="text/css" />
+	}
+			
+	</head>
+
+	<BODY class="@(Model.displayVar("stylename")) function-view">
+	@foreach (string _body in Model.GetSection("body", this)){
+		<style>@MvcHtmlString.Create(@"")@(Model.displayVar("containerCss"))@MvcHtmlString.Create(@"")</style>
+		<div class="r-vbar-page">
+			<DIV data-width="300px" data-fixed class="r-left clearfix @(Model.displayVar("leftbar_class"))">
+								<DIV data-location="left" id="form_left_@(Model.displayVar("pageid"))" data-makeup="leftbar" @(Model.displayVar("form_left")) data-pageid="@(Model.displayVar("pageid"))">
+@foreach (string _left_block in Model.GetSection("left_block", this)){
+ 
+     
+         
+
+			<DIV data-cellId="left_c0" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-logo-cell class="clearfix " data-itemid="logo" @(Model.displayVar("item_logo"))>
+				@foreach (string _logo_block in Model.GetSection("logo_block", this)){
+	<A data-itemtype="logo" data-itemid="logo" @(Model.displayVar("item_logo")) data-pageid="@(Model.displayVar("pageid"))" class="navbar-brand" href="@(Model.displayVar("home_link"))" data-pageid="@(Model.displayVar("pageid"))" @(Model.displayVar("logo_hiddenattr"))>
+		@(Model.displayVar("logo"))
+	</A>
+}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<DIV class="clearfix " data-cellId="left_c0" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-logo-cell data-itemid="expand_button" @(Model.displayVar("item_expand_button")) data-topcell-item-type="expand_button">
+				<SPAN data-itemtype="expand_button" data-itemid="expand_button" @(Model.displayVar("item_expand_button")) data-pageid="@(Model.displayVar("pageid"))" data-small data-button-item>
+	<A type="button" title="Expand" class="btn btn-link   
+	" href="#">
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<DIV data-cellId="left_c1" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" @(Model.displayVar("item_menu")) data-pageid="@(Model.displayVar("pageid"))">
+				@foreach (string _menuitems_main in Model.GetSection("menuitems_main", this)){
+<UL data-itemtype="menu" data-itemid="menu" @(Model.displayVar("item_menu")) data-pageid="@(Model.displayVar("pageid"))" class="r-menu nav menu-treelike" data-menulevel="1">
+
+@foreach (string _item_children1 in Model.GetSection("item_children1", this)){
+<LI class="
+	@(Model.displayVar("item_current"))">
+<A @(Model.displayVar("item_attrs")) title="@(Model.displayVar("item_tooltip"))" data-menu-link data-menu-v data-menu-inline data-menu-top>
+	@(Model.displayVar("item_separator"))
+	<span class="r-menu-link r-menu-expanded "> 
+		<span class="r-menu-title">
+		@(Model.displayVar("item_icon")) @(Model.displayVar("item_title"))
+		</span>
+		@foreach (string _item_haschildren2 in Model.GetSection("item_haschildren2", this)){
+		foreach (string _item_expand_icon in Model.GetSection("item_expand_icon", this)){
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		}
+		}
+	</span>
+		<span class="r-menu-collapsed">@(Model.displayVar("item_collicon"))@(Model.displayVar("item_firstcap"))</span>
+	</a>
+@foreach (string _item_showchildren2 in Model.GetSection("item_showchildren2", this)){
+<UL class="
+			nav collapse 
+			@(Model.displayVar("submenu_class"))" id="submenu@(Model.displayVar("item_id"))" data-menulevel="2">
+	@foreach (string _item_children2 in Model.GetSection("item_children2", this)){
+		foreach (string _item_menulink2 in Model.GetSection("item_menulink2", this)){
+		<LI class="
+						@(Model.displayVar("item_current"))">
+			<A @(Model.displayVar("item_attrs")) title="@(Model.displayVar("item_tooltip"))" data-menu-link data-menu-v data-menu-inline>
+	@(Model.displayVar("item_separator"))
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		@(Model.displayVar("item_icon")) @(Model.displayVar("item_title"))
+		</span>
+		@foreach (string _item_haschildren2_1 in Model.GetSection("item_haschildren2", this)){
+		foreach (string _item_expand_icon_1 in Model.GetSection("item_expand_icon", this)){
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		}
+		}
+	</span>
+	</a>
+			@foreach (string _item_showchildren3 in Model.GetSection("item_showchildren3", this)){
+<UL class="
+			nav collapse 
+			@(Model.displayVar("submenu_class"))" id="submenu@(Model.displayVar("item_id"))" data-menulevel="3">
+	@foreach (string _item_children3 in Model.GetSection("item_children3", this)){
+		foreach (string _item_menulink3 in Model.GetSection("item_menulink3", this)){
+		<LI class="
+						@(Model.displayVar("item_current"))">
+			<A @(Model.displayVar("item_attrs")) title="@(Model.displayVar("item_tooltip"))" data-menu-link data-menu-v data-menu-inline>
+	@(Model.displayVar("item_separator"))
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		@(Model.displayVar("item_icon")) @(Model.displayVar("item_title"))
+		</span>
+		@foreach (string _item_haschildren3 in Model.GetSection("item_haschildren3", this)){
+		foreach (string _item_expand_icon_2 in Model.GetSection("item_expand_icon", this)){
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		}
+		}
+	</span>
+	</a>
+			@foreach (string _item_showchildren4 in Model.GetSection("item_showchildren4", this)){
+<UL class="
+			nav collapse 
+			@(Model.displayVar("submenu_class"))" id="submenu@(Model.displayVar("item_id"))" data-menulevel="4">
+	@foreach (string _item_children4 in Model.GetSection("item_children4", this)){
+		foreach (string _item_menulink4 in Model.GetSection("item_menulink4", this)){
+		<LI class="
+						@(Model.displayVar("item_current"))">
+			<A @(Model.displayVar("item_attrs")) title="@(Model.displayVar("item_tooltip"))" data-menu-link data-menu-v data-menu-inline>
+	@(Model.displayVar("item_separator"))
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		@(Model.displayVar("item_icon")) @(Model.displayVar("item_title"))
+		</span>
+		@foreach (string _item_haschildren4 in Model.GetSection("item_haschildren4", this)){
+		foreach (string _item_expand_icon_3 in Model.GetSection("item_expand_icon", this)){
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		}
+		}
+	</span>
+	</a>
+			@foreach (string _item_showchildren5 in Model.GetSection("item_showchildren5", this)){
+<UL class="
+			nav collapse 
+			@(Model.displayVar("submenu_class"))" id="submenu@(Model.displayVar("item_id"))" data-menulevel="5">
+	@foreach (string _item_children5 in Model.GetSection("item_children5", this)){
+		foreach (string _item_menulink5 in Model.GetSection("item_menulink5", this)){
+		<LI class="
+						@(Model.displayVar("item_current"))">
+			<A @(Model.displayVar("item_attrs")) title="@(Model.displayVar("item_tooltip"))" data-menu-link data-menu-v data-menu-inline>
+	@(Model.displayVar("item_separator"))
+	<span class="r-menu-link  "> 
+		<span class="r-menu-title">
+		@(Model.displayVar("item_icon")) @(Model.displayVar("item_title"))
+		</span>
+		@foreach (string _item_haschildren5 in Model.GetSection("item_haschildren5", this)){
+		foreach (string _item_expand_icon_4 in Model.GetSection("item_expand_icon", this)){
+		<span class="r-menu-expand-icon fa fa-angle-left"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		}
+		}
+	</span>
+	</a>
+					</li>
+		}
+	}
+</ul>
+}
+		</li>
+		}
+	}
+</ul>
+}
+		</li>
+		}
+	}
+</ul>
+}
+		</li>
+		}
+	}
+</ul>
+}
+</li>
+}
+</ul>
+}
+			</div>
+		
+    }
+</div>				</div>
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div  class="r-topheader" data-resize-name="topbar">
+									@foreach (string _supertop_block in Model.GetSection("supertop_block", this)){
+<NAV class="navbar navbar-default" data-location="supertop" id="form_supertop_@(Model.displayVar("pageid"))" data-makeup="leftbar" @(Model.displayVar("form_supertop")) data-pageid="@(Model.displayVar("pageid"))">
+			 
+							 
+				<SPAN class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="@(Model.displayVar("pageid"))" data-itemid="expand_menu_button" @(Model.displayVar("item_expand_menu_button")) data-topcell-item-type="expand_menu_button">
+				<SPAN data-itemtype="expand_menu_button" data-itemid="expand_menu_button" @(Model.displayVar("item_expand_menu_button")) data-pageid="@(Model.displayVar("pageid"))" data-small data-button-item>
+	<A type="button" title="Show menu" class="btn-link   
+	 glyphicon glyphicon-menu-hamburger" href="#">		
+				
+								</a>
+</span>
+			</span>
+		 
+				<SPAN class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="@(Model.displayVar("pageid"))" data-itemid="collapse_button" @(Model.displayVar("item_collapse_button")) data-topcell-item-type="collapse_button">
+				<SPAN data-itemtype="collapse_button" data-itemid="collapse_button" @(Model.displayVar("item_collapse_button")) data-pageid="@(Model.displayVar("pageid"))" data-small data-button-item>
+	<A type="button" title="Collapse" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#">		
+				
+								</a>
+</span>
+			</span>
+		 
+				<SPAN class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="@(Model.displayVar("pageid"))" data-itemid="breadcrumb" @(Model.displayVar("item_breadcrumb")) data-topcell-item-type="breadcrumb">
+				@foreach (string _breadcrumb in Model.GetSection("breadcrumb", this)){
+<OL class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" @(Model.displayVar("item_breadcrumb")) data-pageid="@(Model.displayVar("pageid"))">
+<li ><A href="@(Model.displayVar("crumb_home_link"))"><span class="glyphicon glyphicon-home"></span></a>@(Model.displayVar("crumb_dropdown"))</li>
+@foreach (string _crumb in Model.GetSection("crumb", this)){
+  <LI class="@(Model.displayVar("crumb_item_class"))">
+@foreach (string _crumb_title_link in Model.GetSection("crumb_title_link", this)){
+	<A @(Model.displayVar("crumb_attrs"))>@(Model.displayVar("crumb_title"))</a>
+}
+@foreach (string _crumb_title_span in Model.GetSection("crumb_title_span", this)){
+	<SPAN @(Model.displayVar("crumb_attrs"))>@(Model.displayVar("crumb_title"))</span>
+}	
+	@(Model.displayVar("crumb_dropdown"))
+  </li>
+}
+</ol>
+}			</span>
+							 
+													</nav>
+}
+						@(Model.displayVar("locking"))
+				</div>
+				<div class="r-body" data-resize-top="topbar" data-body-width="full">
+					@{Html.RenderSharedView("header");}
+					<div class="r-top">
+									@foreach (string _top_block in Model.GetSection("top_block", this)){
+<DIV class="r-form" data-location="top" id="form_top_@(Model.displayVar("pageid"))" data-makeup="leftbar" @(Model.displayVar("form_top")) data-pageid="@(Model.displayVar("pageid"))">		
+	 
+				<div class="row">
+			 
+				<DIV data-cellId="top_c1" data-pageid="@(Model.displayVar("pageid"))" @(Model.displayVar("cell_top_c1")) class=" r-ori-vert			col-md-12
+	
+">
+			</div>					</div>
+			</div>		
+}
+						</div>
+											<div class="r-above">
+					@foreach (string _above_grid_block in Model.GetSection("above-grid_block", this)){
+<DIV class="r-form" data-location="above-grid" id="form_above-grid_@(Model.displayVar("pageid"))" data-makeup="leftbar" @(Model.displayVar("form_above-grid")) data-pageid="@(Model.displayVar("pageid"))">		
+	 
+				<div class="row">
+			 
+				<DIV data-cellId="above-grid_c1" data-pageid="@(Model.displayVar("pageid"))" @(Model.displayVar("cell_above-grid_c1")) class=" r-ori-vert			col-md-12
+	
+">
+		@foreach (string _firstAboveGridCell in Model.GetSection("firstAboveGridCell", this)){
+				}	
+	</div>					</div>
+			</div>		
+}
+	</div>
+<div class="r-grid">
+	@foreach (string _grid_tabs in Model.GetSection("grid_tabs", this)){
+  <ul class="nav nav-tabs bsgrid_tabs">
+	@(Model.displayVar("grid_tabs_content"))
+  </ul>
+}
+					@foreach (string _grid_block in Model.GetSection("grid_block", this)){
+
+
+
+
+ 
+	 
+												<DIV class="panel with-tabs panel-default form-tabs" data-itemtype="tabs" data-itemid="tabs1" @(Model.displayVar("item_tabs1")) data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view">
+	<div class="panel-heading">
+		<ul class="nav nav-tabs" role="tablist">
+									<li role="presentation" class="active">
+				<A aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section2@(Model.displayVar("pageid"))">
+					View Record				</a>
+			</li>
+									</ul>
+	</div>
+	<div class="panel-body">
+		<div class="tab-content">
+							<DIV role="tabpanel" class="tab-pane active" id="tab_section2@(Model.displayVar("pageid"))"> 
+			@foreach (string _section2_block in Model.GetSection("section2_block", this)){
+
+
+
+
+ 
+	 
+												<TABLE data-body-align="left" data-location="section2" id="form_section2_@(Model.displayVar("pageid"))" data-makeup="leftbar" @(Model.displayVar("form_section2")) data-pageid="@(Model.displayVar("pageid"))" class="r-edit-form" cellpadding="0" cellspacing="0" @(Model.displayVar("grid_hiddenattr")) data-v-width="6">
+	<tbody>
+										<TR @(Model.displayVar("row_section2_0"))>
+										
+
+@foreach (string _cellblock_section2_c4 in Model.GetSection("cellblock_section2_c4", this)){
+<TD @(Model.displayVar("cell_section2_c4")) class="r-align-left r-ori-vert" data-single data-cellId="section2_c4" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="1">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _ObserverId_fieldblock in Model.GetSection("ObserverId_fieldblock", this)){
+	<LABEL class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field25" @(Model.displayVar("item_integrated_edit_field25")) data-pageid="@(Model.displayVar("pageid"))" data-field="ObserverId" data-fieldname="ObserverId" data-compact>@foreach (string _ObserverId_label in Model.GetSection("ObserverId_label", this)){@(Model.displayVar("label dbo_ObserverReport ObserverId"))}</label>
+}
+	
+								</td>
+			}
+			 
+																
+
+@foreach (string _cellblock_section2_c2 in Model.GetSection("cellblock_section2_c2", this)){
+<TD @(Model.displayVar("cell_section2_c2")) class="r-align-left r-ori-vert" data-single data-cellId="section2_c2" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="2">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _ObserverId_fieldblock_1 in Model.GetSection("ObserverId_fieldblock", this)){
+	<DIV class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field" @(Model.displayVar("item_integrated_edit_field")) data-pageid="@(Model.displayVar("pageid"))" data-field="ObserverId" data-fieldname="ObserverId" data-compact>
+		@(Model.displayVar("ObserverId_value"))	</div>
+}
+	
+								</td>
+			}
+			 
+																
+
+@foreach (string _cellblock_section2_c in Model.GetSection("cellblock_section2_c", this)){
+<TD @(Model.displayVar("cell_section2_c")) class="r-align-left r-ori-vert" data-single data-cellId="section2_c" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="1">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _ProcurementActivityId_fieldblock in Model.GetSection("ProcurementActivityId_fieldblock", this)){
+	<LABEL class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field26" @(Model.displayVar("item_integrated_edit_field26")) data-pageid="@(Model.displayVar("pageid"))" data-field="ProcurementActivityId" data-fieldname="ProcurementActivityId" data-compact>@foreach (string _ProcurementActivityId_label in Model.GetSection("ProcurementActivityId_label", this)){@(Model.displayVar("label dbo_ObserverReport ProcurementActivityId"))}</label>
+}
+	
+								</td>
+			}
+			 
+																
+
+@foreach (string _cellblock_section2_c3 in Model.GetSection("cellblock_section2_c3", this)){
+<TD @(Model.displayVar("cell_section2_c3")) class="r-align-left r-ori-vert" data-single data-cellId="section2_c3" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="2">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _ProcurementActivityId_fieldblock_1 in Model.GetSection("ProcurementActivityId_fieldblock", this)){
+	<DIV class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field1" @(Model.displayVar("item_integrated_edit_field1")) data-pageid="@(Model.displayVar("pageid"))" data-field="ProcurementActivityId" data-fieldname="ProcurementActivityId" data-compact>
+		@(Model.displayVar("ProcurementActivityId_value"))	</div>
+}
+	
+								</td>
+			}
+								</tr>
+	 
+	 
+														<TR @(Model.displayVar("row_section2_1"))>
+										
+
+@foreach (string _cellblock_section2_c5 in Model.GetSection("cellblock_section2_c5", this)){
+<TD @(Model.displayVar("cell_section2_c5")) class="r-align-left r-ori-vert" data-single data-cellId="section2_c5" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="1">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _ComplianceAssesment_fieldblock in Model.GetSection("ComplianceAssesment_fieldblock", this)){
+	<LABEL class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field27" @(Model.displayVar("item_integrated_edit_field27")) data-pageid="@(Model.displayVar("pageid"))" data-field="ComplianceAssesment" data-fieldname="ComplianceAssesment" data-compact>@foreach (string _ComplianceAssesment_label in Model.GetSection("ComplianceAssesment_label", this)){@(Model.displayVar("label dbo_ObserverReport ComplianceAssesment"))}</label>
+}
+	
+								</td>
+			}
+			 
+																
+
+@foreach (string _cellblock_section2_c6 in Model.GetSection("cellblock_section2_c6", this)){
+<TD @(Model.displayVar("cell_section2_c6")) class="r-align-left r-ori-vert" data-single data-cellId="section2_c6" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="2">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _ComplianceAssesment_fieldblock_1 in Model.GetSection("ComplianceAssesment_fieldblock", this)){
+	<DIV class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field3" @(Model.displayVar("item_integrated_edit_field3")) data-pageid="@(Model.displayVar("pageid"))" data-field="ComplianceAssesment" data-fieldname="ComplianceAssesment" data-compact>
+		@(Model.displayVar("ComplianceAssesment_value"))	</div>
+}
+	
+								</td>
+			}
+			 
+																
+
+@foreach (string _cellblock_section2_c7 in Model.GetSection("cellblock_section2_c7", this)){
+<TD @(Model.displayVar("cell_section2_c7")) class="r-align-left r-ori-vert" data-single data-cellId="section2_c7" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="1">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _AreasOfImprovement_fieldblock in Model.GetSection("AreasOfImprovement_fieldblock", this)){
+	<LABEL class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field28" @(Model.displayVar("item_integrated_edit_field28")) data-pageid="@(Model.displayVar("pageid"))" data-field="AreasOfImprovement" data-fieldname="AreasOfImprovement" data-compact>@foreach (string _AreasOfImprovement_label in Model.GetSection("AreasOfImprovement_label", this)){@(Model.displayVar("label dbo_ObserverReport AreasOfImprovement"))}</label>
+}
+	
+								</td>
+			}
+			 
+																
+
+@foreach (string _cellblock_section2_c8 in Model.GetSection("cellblock_section2_c8", this)){
+<TD @(Model.displayVar("cell_section2_c8")) class="r-align-left r-ori-vert" data-single data-cellId="section2_c8" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="2">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _AreasOfImprovement_fieldblock_1 in Model.GetSection("AreasOfImprovement_fieldblock", this)){
+	<DIV class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field4" @(Model.displayVar("item_integrated_edit_field4")) data-pageid="@(Model.displayVar("pageid"))" data-field="AreasOfImprovement" data-fieldname="AreasOfImprovement" data-compact>
+		@(Model.displayVar("AreasOfImprovement_value"))	</div>
+}
+	
+								</td>
+			}
+								</tr>
+	 
+	 
+														<TR @(Model.displayVar("row_section2_2"))>
+										
+
+@foreach (string _cellblock_section2_c9 in Model.GetSection("cellblock_section2_c9", this)){
+<TD @(Model.displayVar("cell_section2_c9")) class="r-align-left r-ori-vert" data-single data-cellId="section2_c9" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="1">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _ReportDate_fieldblock in Model.GetSection("ReportDate_fieldblock", this)){
+	<LABEL class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field29" @(Model.displayVar("item_integrated_edit_field29")) data-pageid="@(Model.displayVar("pageid"))" data-field="ReportDate" data-fieldname="ReportDate" data-compact>@foreach (string _ReportDate_label in Model.GetSection("ReportDate_label", this)){@(Model.displayVar("label dbo_ObserverReport ReportDate"))}</label>
+}
+	
+								</td>
+			}
+			 
+																
+
+@foreach (string _cellblock_section2_c10 in Model.GetSection("cellblock_section2_c10", this)){
+<TD @(Model.displayVar("cell_section2_c10")) class="r-align-left r-ori-vert" data-single data-cellId="section2_c10" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="2">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _ReportDate_fieldblock_1 in Model.GetSection("ReportDate_fieldblock", this)){
+	<DIV class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field2" @(Model.displayVar("item_integrated_edit_field2")) data-pageid="@(Model.displayVar("pageid"))" data-field="ReportDate" data-fieldname="ReportDate" data-compact>
+		@(Model.displayVar("ReportDate_value"))	</div>
+}
+	
+								</td>
+			}
+			 
+		
+							
+
+@foreach (string _cellblock_section2_c11 in Model.GetSection("cellblock_section2_c11", this)){
+<TD @(Model.displayVar("cell_section2_c11")) class="r-align-left r-ori-vert" data-single data-cellId="section2_c11" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="1">
+	<div edit-form-cell class="clearfix">
+									</td>
+			}
+			 
+		
+							
+
+@foreach (string _cellblock_section2_c12 in Model.GetSection("cellblock_section2_c12", this)){
+<TD @(Model.displayVar("cell_section2_c12")) class="r-align-left r-ori-vert" data-single data-cellId="section2_c12" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="2">
+	<div edit-form-cell class="clearfix">
+									</td>
+			}
+								</tr>
+	 
+	 
+																</tbody></table>
+				<DIV class="panel with-tabs panel-default form-tabs" data-itemtype="tabs" data-itemid="tabs" @(Model.displayVar("item_tabs")) data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view">
+	<div class="panel-heading">
+		<ul class="nav nav-tabs" role="tablist">
+									<li role="presentation" class="active">
+				<A aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section@(Model.displayVar("pageid"))">
+					General Information				</a>
+			</li>
+										<li role="presentation" class="">
+				<A aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section1@(Model.displayVar("pageid"))">
+					Others				</a>
+			</li>
+									</ul>
+	</div>
+	<div class="panel-body">
+		<div class="tab-content">
+							<DIV role="tabpanel" class="tab-pane active" id="tab_section@(Model.displayVar("pageid"))"> 
+			@foreach (string _section_block in Model.GetSection("section_block", this)){
+
+
+
+
+ 
+	 
+												<TABLE data-body-align="left" data-location="section" id="form_section_@(Model.displayVar("pageid"))" data-makeup="leftbar" @(Model.displayVar("form_section")) data-pageid="@(Model.displayVar("pageid"))" class="r-edit-form" cellpadding="0" cellspacing="0" @(Model.displayVar("grid_hiddenattr")) data-v-width="6">
+	<tbody>
+										<TR @(Model.displayVar("row_section_0"))>
+										
+
+@foreach (string _cellblock_section_c4 in Model.GetSection("cellblock_section_c4", this)){
+<TD @(Model.displayVar("cell_section_c4")) class="r-align-left r-ori-vert" data-single data-cellId="section_c4" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="1">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _BACMeetingsMinutes_fieldblock in Model.GetSection("BACMeetingsMinutes_fieldblock", this)){
+	<LABEL class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field17" @(Model.displayVar("item_integrated_edit_field17")) data-pageid="@(Model.displayVar("pageid"))" data-field="BACMeetingsMinutes" data-fieldname="BACMeetingsMinutes" data-compact>@foreach (string _BACMeetingsMinutes_label in Model.GetSection("BACMeetingsMinutes_label", this)){@(Model.displayVar("label dbo_ObserverReport BACMeetingsMinutes"))}</label>
+}
+	
+								</td>
+			}
+			 
+																
+
+@foreach (string _cellblock_section_c2 in Model.GetSection("cellblock_section_c2", this)){
+<TD @(Model.displayVar("cell_section_c2")) class="r-align-left r-ori-vert" data-single data-cellId="section_c2" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="2">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _BACMeetingsMinutes_fieldblock_1 in Model.GetSection("BACMeetingsMinutes_fieldblock", this)){
+	<DIV class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field5" @(Model.displayVar("item_integrated_edit_field5")) data-pageid="@(Model.displayVar("pageid"))" data-field="BACMeetingsMinutes" data-fieldname="BACMeetingsMinutes" data-compact>
+		@(Model.displayVar("BACMeetingsMinutes_value"))	</div>
+}
+	
+								</td>
+			}
+			 
+																
+
+@foreach (string _cellblock_section_c in Model.GetSection("cellblock_section_c", this)){
+<TD @(Model.displayVar("cell_section_c")) class="r-align-left r-ori-vert" data-single data-cellId="section_c" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="1">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _AbstractOfBids_fieldblock in Model.GetSection("AbstractOfBids_fieldblock", this)){
+	<LABEL class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field18" @(Model.displayVar("item_integrated_edit_field18")) data-pageid="@(Model.displayVar("pageid"))" data-field="AbstractOfBids" data-fieldname="AbstractOfBids" data-compact>@foreach (string _AbstractOfBids_label in Model.GetSection("AbstractOfBids_label", this)){@(Model.displayVar("label dbo_ObserverReport AbstractOfBids"))}</label>
+}
+	
+								</td>
+			}
+			 
+																
+
+@foreach (string _cellblock_section_c3 in Model.GetSection("cellblock_section_c3", this)){
+<TD @(Model.displayVar("cell_section_c3")) class="r-align-left r-ori-vert" data-single data-cellId="section_c3" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="2">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _AbstractOfBids_fieldblock_1 in Model.GetSection("AbstractOfBids_fieldblock", this)){
+	<DIV class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field6" @(Model.displayVar("item_integrated_edit_field6")) data-pageid="@(Model.displayVar("pageid"))" data-field="AbstractOfBids" data-fieldname="AbstractOfBids" data-compact>
+		@(Model.displayVar("AbstractOfBids_value"))	</div>
+}
+	
+								</td>
+			}
+								</tr>
+	 
+	 
+														<TR @(Model.displayVar("row_section_1"))>
+										
+
+@foreach (string _cellblock_section_c5 in Model.GetSection("cellblock_section_c5", this)){
+<TD @(Model.displayVar("cell_section_c5")) class="r-align-left r-ori-vert" data-single data-cellId="section_c5" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="1">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _PostQualificationReport_fieldblock in Model.GetSection("PostQualificationReport_fieldblock", this)){
+	<LABEL class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field19" @(Model.displayVar("item_integrated_edit_field19")) data-pageid="@(Model.displayVar("pageid"))" data-field="PostQualificationReport" data-fieldname="PostQualificationReport" data-compact>@foreach (string _PostQualificationReport_label in Model.GetSection("PostQualificationReport_label", this)){@(Model.displayVar("label dbo_ObserverReport PostQualificationReport"))}</label>
+}
+	
+								</td>
+			}
+			 
+																
+
+@foreach (string _cellblock_section_c6 in Model.GetSection("cellblock_section_c6", this)){
+<TD @(Model.displayVar("cell_section_c6")) class="r-align-left r-ori-vert" data-single data-cellId="section_c6" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="2">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _PostQualificationReport_fieldblock_1 in Model.GetSection("PostQualificationReport_fieldblock", this)){
+	<DIV class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field7" @(Model.displayVar("item_integrated_edit_field7")) data-pageid="@(Model.displayVar("pageid"))" data-field="PostQualificationReport" data-fieldname="PostQualificationReport" data-compact>
+		@(Model.displayVar("PostQualificationReport_value"))	</div>
+}
+	
+								</td>
+			}
+			 
+																
+
+@foreach (string _cellblock_section_c7 in Model.GetSection("cellblock_section_c7", this)){
+<TD @(Model.displayVar("cell_section_c7")) class="r-align-left r-ori-vert" data-single data-cellId="section_c7" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="1">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _APPPPMPDocuments_fieldblock in Model.GetSection("APPPPMPDocuments_fieldblock", this)){
+	<LABEL class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field20" @(Model.displayVar("item_integrated_edit_field20")) data-pageid="@(Model.displayVar("pageid"))" data-field="APPPPMPDocuments" data-fieldname="APPPPMPDocuments" data-compact>@foreach (string _APPPPMPDocuments_label in Model.GetSection("APPPPMPDocuments_label", this)){@(Model.displayVar("label dbo_ObserverReport APPPPMPDocuments"))}</label>
+}
+	
+								</td>
+			}
+			 
+																
+
+@foreach (string _cellblock_section_c8 in Model.GetSection("cellblock_section_c8", this)){
+<TD @(Model.displayVar("cell_section_c8")) class="r-align-left r-ori-vert" data-single data-cellId="section_c8" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="2">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _APPPPMPDocuments_fieldblock_1 in Model.GetSection("APPPPMPDocuments_fieldblock", this)){
+	<DIV class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field8" @(Model.displayVar("item_integrated_edit_field8")) data-pageid="@(Model.displayVar("pageid"))" data-field="APPPPMPDocuments" data-fieldname="APPPPMPDocuments" data-compact>
+		@(Model.displayVar("APPPPMPDocuments_value"))	</div>
+}
+	
+								</td>
+			}
+								</tr>
+	 
+	 
+														<TR @(Model.displayVar("row_section_2"))>
+										
+
+@foreach (string _cellblock_section_c9 in Model.GetSection("cellblock_section_c9", this)){
+<TD @(Model.displayVar("cell_section_c9")) class="r-align-left r-ori-vert" data-single data-cellId="section_c9" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="1">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _OpenedProposals_fieldblock in Model.GetSection("OpenedProposals_fieldblock", this)){
+	<LABEL class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field21" @(Model.displayVar("item_integrated_edit_field21")) data-pageid="@(Model.displayVar("pageid"))" data-field="OpenedProposals" data-fieldname="OpenedProposals" data-compact>@foreach (string _OpenedProposals_label in Model.GetSection("OpenedProposals_label", this)){@(Model.displayVar("label dbo_ObserverReport OpenedProposals"))}</label>
+}
+	
+								</td>
+			}
+			 
+																
+
+@foreach (string _cellblock_section_c10 in Model.GetSection("cellblock_section_c10", this)){
+<TD @(Model.displayVar("cell_section_c10")) class="r-align-left r-ori-vert" data-single data-cellId="section_c10" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="2">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _OpenedProposals_fieldblock_1 in Model.GetSection("OpenedProposals_fieldblock", this)){
+	<DIV class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field9" @(Model.displayVar("item_integrated_edit_field9")) data-pageid="@(Model.displayVar("pageid"))" data-field="OpenedProposals" data-fieldname="OpenedProposals" data-compact>
+		@(Model.displayVar("OpenedProposals_value"))	</div>
+}
+	
+								</td>
+			}
+			 
+																
+
+@foreach (string _cellblock_section_c11 in Model.GetSection("cellblock_section_c11", this)){
+<TD @(Model.displayVar("cell_section_c11")) class="r-align-left r-ori-vert" data-single data-cellId="section_c11" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="1">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _AbstractSigned_fieldblock in Model.GetSection("AbstractSigned_fieldblock", this)){
+	<LABEL class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field22" @(Model.displayVar("item_integrated_edit_field22")) data-pageid="@(Model.displayVar("pageid"))" data-field="AbstractSigned" data-fieldname="AbstractSigned" data-compact>@foreach (string _AbstractSigned_label in Model.GetSection("AbstractSigned_label", this)){@(Model.displayVar("label dbo_ObserverReport AbstractSigned"))}</label>
+}
+	
+								</td>
+			}
+			 
+																
+
+@foreach (string _cellblock_section_c12 in Model.GetSection("cellblock_section_c12", this)){
+<TD @(Model.displayVar("cell_section_c12")) class="r-align-left r-ori-vert" data-single data-cellId="section_c12" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="2">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _AbstractSigned_fieldblock_1 in Model.GetSection("AbstractSigned_fieldblock", this)){
+	<DIV class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field12" @(Model.displayVar("item_integrated_edit_field12")) data-pageid="@(Model.displayVar("pageid"))" data-field="AbstractSigned" data-fieldname="AbstractSigned" data-compact>
+		@(Model.displayVar("AbstractSigned_value"))	</div>
+}
+	
+								</td>
+			}
+								</tr>
+	 
+	 
+														<TR @(Model.displayVar("row_section_3"))>
+										
+
+@foreach (string _cellblock_section_c13 in Model.GetSection("cellblock_section_c13", this)){
+<TD @(Model.displayVar("cell_section_c13")) class="r-align-left r-ori-vert" data-single data-cellId="section_c13" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="1">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _PostQualificationSigned_fieldblock in Model.GetSection("PostQualificationSigned_fieldblock", this)){
+	<LABEL class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field23" @(Model.displayVar("item_integrated_edit_field23")) data-pageid="@(Model.displayVar("pageid"))" data-field="PostQualificationSigned" data-fieldname="PostQualificationSigned" data-compact>@foreach (string _PostQualificationSigned_label in Model.GetSection("PostQualificationSigned_label", this)){@(Model.displayVar("label dbo_ObserverReport PostQualificationSigned"))}</label>
+}
+	
+								</td>
+			}
+			 
+																
+
+@foreach (string _cellblock_section_c14 in Model.GetSection("cellblock_section_c14", this)){
+<TD @(Model.displayVar("cell_section_c14")) class="r-align-left r-ori-vert" data-single data-cellId="section_c14" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="2">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _PostQualificationSigned_fieldblock_1 in Model.GetSection("PostQualificationSigned_fieldblock", this)){
+	<DIV class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field13" @(Model.displayVar("item_integrated_edit_field13")) data-pageid="@(Model.displayVar("pageid"))" data-field="PostQualificationSigned" data-fieldname="PostQualificationSigned" data-compact>
+		@(Model.displayVar("PostQualificationSigned_value"))	</div>
+}
+	
+								</td>
+			}
+			 
+																
+
+@foreach (string _cellblock_section_c15 in Model.GetSection("cellblock_section_c15", this)){
+<TD @(Model.displayVar("cell_section_c15")) class="r-align-left r-ori-vert" data-single data-cellId="section_c15" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="1">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _WrittenDissent_fieldblock in Model.GetSection("WrittenDissent_fieldblock", this)){
+	<LABEL class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field24" @(Model.displayVar("item_integrated_edit_field24")) data-pageid="@(Model.displayVar("pageid"))" data-field="WrittenDissent" data-fieldname="WrittenDissent" data-compact>@foreach (string _WrittenDissent_label in Model.GetSection("WrittenDissent_label", this)){@(Model.displayVar("label dbo_ObserverReport WrittenDissent"))}</label>
+}
+	
+								</td>
+			}
+			 
+																
+
+@foreach (string _cellblock_section_c16 in Model.GetSection("cellblock_section_c16", this)){
+<TD @(Model.displayVar("cell_section_c16")) class="r-align-left r-ori-vert" data-single data-cellId="section_c16" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="2">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _WrittenDissent_fieldblock_1 in Model.GetSection("WrittenDissent_fieldblock", this)){
+	<DIV class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field14" @(Model.displayVar("item_integrated_edit_field14")) data-pageid="@(Model.displayVar("pageid"))" data-field="WrittenDissent" data-fieldname="WrittenDissent" data-compact>
+		@(Model.displayVar("WrittenDissent_value"))	</div>
+}
+	
+								</td>
+			}
+								</tr>
+			</tbody></table>
+}
+						</div>
+					<DIV role="tabpanel" class="tab-pane " id="tab_section1@(Model.displayVar("pageid"))"> 
+			@foreach (string _section1_block in Model.GetSection("section1_block", this)){
+
+
+
+
+ 
+	 
+												<TABLE data-body-align="left" data-location="section1" id="form_section1_@(Model.displayVar("pageid"))" data-makeup="leftbar" @(Model.displayVar("form_section1")) data-pageid="@(Model.displayVar("pageid"))" class="r-edit-form" cellpadding="0" cellspacing="0" @(Model.displayVar("grid_hiddenattr")) data-v-width="6">
+	<tbody>
+										<TR @(Model.displayVar("row_section1_0"))>
+										
+
+@foreach (string _cellblock_section1_c4 in Model.GetSection("cellblock_section1_c4", this)){
+<TD @(Model.displayVar("cell_section1_c4")) class="r-align-left r-ori-vert" data-single data-cellId="section1_c4" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="1">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _ReportSubmittedto_fieldblock in Model.GetSection("ReportSubmittedto_fieldblock", this)){
+	<LABEL class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field15" @(Model.displayVar("item_integrated_edit_field15")) data-pageid="@(Model.displayVar("pageid"))" data-field="ReportSubmittedto" data-fieldname="ReportSubmittedto" data-compact>@foreach (string _ReportSubmittedto_label in Model.GetSection("ReportSubmittedto_label", this)){@(Model.displayVar("label dbo_ObserverReport ReportSubmittedto"))}</label>
+}
+	
+								</td>
+			}
+			 
+																
+
+@foreach (string _cellblock_section1_c2 in Model.GetSection("cellblock_section1_c2", this)){
+<TD @(Model.displayVar("cell_section1_c2")) class="r-align-left r-ori-vert" data-single data-cellId="section1_c2" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="2">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _ReportSubmittedto_fieldblock_1 in Model.GetSection("ReportSubmittedto_fieldblock", this)){
+	<DIV class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field10" @(Model.displayVar("item_integrated_edit_field10")) data-pageid="@(Model.displayVar("pageid"))" data-field="ReportSubmittedto" data-fieldname="ReportSubmittedto" data-compact>
+		@(Model.displayVar("ReportSubmittedto_value"))	</div>
+}
+	
+								</td>
+			}
+			 
+																
+
+@foreach (string _cellblock_section1_c in Model.GetSection("cellblock_section1_c", this)){
+<TD @(Model.displayVar("cell_section1_c")) class="r-align-left r-ori-vert" data-single data-cellId="section1_c" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="1">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _ReportStatus_fieldblock in Model.GetSection("ReportStatus_fieldblock", this)){
+	<LABEL class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field16" @(Model.displayVar("item_integrated_edit_field16")) data-pageid="@(Model.displayVar("pageid"))" data-field="ReportStatus" data-fieldname="ReportStatus" data-compact>@foreach (string _ReportStatus_label in Model.GetSection("ReportStatus_label", this)){@(Model.displayVar("label dbo_ObserverReport ReportStatus"))}</label>
+}
+	
+								</td>
+			}
+			 
+																
+
+@foreach (string _cellblock_section1_c3 in Model.GetSection("cellblock_section1_c3", this)){
+<TD @(Model.displayVar("cell_section1_c3")) class="r-align-left r-ori-vert" data-single data-cellId="section1_c3" data-pageid="@(Model.displayVar("pageid"))" data-page="observerreport_view" data-v-cell="2">
+	<div edit-form-cell class="clearfix">
+				@foreach (string _ReportStatus_fieldblock_1 in Model.GetSection("ReportStatus_fieldblock", this)){
+	<DIV class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field11" @(Model.displayVar("item_integrated_edit_field11")) data-pageid="@(Model.displayVar("pageid"))" data-field="ReportStatus" data-fieldname="ReportStatus" data-compact>
+		@(Model.displayVar("ReportStatus_value"))	</div>
+}
+	
+								</td>
+			}
+								</tr>
+			</tbody></table>
+}
+						</div>
+				</div>
+	</div>
+</div>  	
+				}
+						</div>
+				</div>
+	</div>
+</div>  	
+				}
+	</div>
+<div class="r-below">
+					@foreach (string _below_grid_block in Model.GetSection("below-grid_block", this)){
+<DIV class="r-form" data-location="below-grid" id="form_below-grid_@(Model.displayVar("pageid"))" data-makeup="leftbar" @(Model.displayVar("form_below-grid")) data-pageid="@(Model.displayVar("pageid"))">		
+	 
+				<div class="row">
+			 
+				<DIV data-cellId="below-grid_c1" data-pageid="@(Model.displayVar("pageid"))" @(Model.displayVar("cell_below-grid_c1")) class="			col-md-6
+	
+">
+		 
+		@foreach (string _back_button in Model.GetSection("back_button", this)){
+<SPAN data-itemtype="view_back_list" data-itemid="view_back_list" @(Model.displayVar("item_view_back_list")) data-pageid="@(Model.displayVar("pageid"))" data-small data-button-item>
+	<A type="button" title class="btn btn-default   
+	" @(Model.displayVar("backbutton_attrs"))>
+							Back to list			</a>
+</span>
+}
+	 
+		@foreach (string _close_button in Model.GetSection("close_button", this)){
+<SPAN data-itemtype="view_close" data-itemid="view_close" @(Model.displayVar("item_view_close")) data-pageid="@(Model.displayVar("pageid"))" data-small data-button-item>
+	<A type="button" title class="btn btn-default   
+	" href="#" @(Model.displayVar("closebutton_attrs"))>
+							Close window			</a>
+</span>
+}
+		</div>			 
+				<DIV data-cellId="below-grid_c2" data-pageid="@(Model.displayVar("pageid"))" @(Model.displayVar("cell_below-grid_c2")) class="r-align-right r-ori-vert			col-md-6
+	
+">
+			</div>					</div>
+			</div>		
+}
+	</div>
+
+
+
+
+										@{Html.RenderSharedView("footer");}
+				</div>
+			</div>
+			<div class="r-body-shadow">
+			</div>
+		</div>
+	}
+	</body>
+</html>

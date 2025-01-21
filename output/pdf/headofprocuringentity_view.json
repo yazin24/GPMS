@@ -1,0 +1,709 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'above-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+					colSpan: 2,
+		
+			
+			
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+																		{ 
+				cellId: 'c1',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"*", 
+							{END col_grid_0}
+					 ],	
+		
+			heights: [
+								{BEGIN row_grid_0}
+						
+			"%",
+						{END row_grid_0}
+			 
+				],
+	
+		body: [
+				
+				{BEGIN row_grid_0}
+				[
+																{BEGIN cellblock_grid_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section2',
+			widths: ['*'],
+			body: [
+				[{text: 'View Record', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section2_0}
+									"*", 
+								{END col_section2_0}
+															{BEGIN col_section2_1}
+									"*", 
+								{END col_section2_1}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section2_0}
+				[
+																{BEGIN cellblock_section2_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			fieldName: 'HopeName',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_HeadOfProcuringEntity HopeName }","hidden":"{$item_hide_integrated_edit_field7}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c4}
+																							{BEGIN cellblock_section2_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			fieldName: 'HopeName',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$HopeName_pdfvalue},"hidden":"{$item_hide_integrated_edit_field2}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c2}
+											],
+				{END row_section2_0}
+						{BEGIN row_section2_1}
+				[
+																{BEGIN cellblock_section2_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			fieldName: 'EntityId',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_HeadOfProcuringEntity EntityId }","hidden":"{$item_hide_integrated_edit_field6}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c}
+																							{BEGIN cellblock_section2_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			fieldName: 'EntityId',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$EntityId_pdfvalue},"hidden":"{$item_hide_integrated_edit_field1}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c3}
+											],
+				{END row_section2_1}
+						{BEGIN row_section2_2}
+				[
+																{BEGIN cellblock_section2_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+			fieldName: 'HopeType',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_HeadOfProcuringEntity HopeType }","hidden":"{$item_hide_integrated_edit_field8}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c5}
+																							{BEGIN cellblock_section2_c6}
+{
+	cellId: 'c6',
+	col:0,
+	row:0,
+			fieldName: 'HopeType',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$HopeType_pdfvalue},"hidden":"{$item_hide_integrated_edit_field3}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c6}
+											],
+				{END row_section2_2}
+						{BEGIN row_section2_3}
+				[
+																{BEGIN cellblock_section2_c7}
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+			fieldName: 'DelegationDetails',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_HeadOfProcuringEntity DelegationDetails }","hidden":"{$item_hide_integrated_edit_field9}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c7}
+																							{BEGIN cellblock_section2_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			fieldName: 'DelegationDetails',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$DelegationDetails_pdfvalue},"hidden":"{$item_hide_integrated_edit_field4}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c8}
+											],
+				{END row_section2_3}
+						{BEGIN row_section2_4}
+				[
+																{BEGIN cellblock_section2_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_section2_c1}
+			colSpan: {$colspan_section2_c1},
+			{END colspan_section2_c1}
+		
+		
+	
+			
+	
+			"stack": [
+		
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section',
+			widths: ['*'],
+			body: [
+				[{text: 'General Information', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section_0}
+									"*", 
+								{END col_section_0}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section_0}
+				[
+																{BEGIN cellblock_section_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c1}
+											],
+				{END row_section_0}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+ 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section1',
+			widths: ['*'],
+			body: [
+				[{text: 'Others', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section1_0}
+									"*", 
+								{END col_section1_0}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section1_0}
+				[
+																{BEGIN cellblock_section1_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c1}
+											],
+				{END row_section1_0}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c1}
+																		{ 
+				cellId: 'c1',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_section2_4}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c3}
+											],
+				{END row_grid_0}
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_view_back_list}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+																							{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+			]
+};
+
+pdfFonts = {$pdfFonts};
+  

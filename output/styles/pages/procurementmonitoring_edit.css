@@ -1,0 +1,40 @@
+[data-cellid="left_c1"][data-page="procurementmonitoring_edit"][data-cellid="left_c1"][data-page="procurementmonitoring_edit"][data-cellid="left_c1"][data-page="procurementmonitoring_edit"] {
+  font-weight: bold;
+}
+[data-cellid="top_c1"][data-page="procurementmonitoring_edit"][data-cellid="top_c1"][data-page="procurementmonitoring_edit"][data-cellid="top_c1"][data-page="procurementmonitoring_edit"] {
+  font-size: 15px;
+  padding-top: 15px;
+  padding-bottom: 75px;
+  padding-left: 50px;
+}
+[data-cellid="grid_c3"][data-page="procurementmonitoring_edit"][data-cellid="grid_c3"][data-page="procurementmonitoring_edit"][data-cellid="grid_c3"][data-page="procurementmonitoring_edit"] {
+  font-size: 15px;
+  padding-left: 35px;
+}
+[data-page="procurementmonitoring_edit"][data-itemid="edit_save"] > .btn {
+  background-color: #efb11d;
+  background-image: none;
+  text-shadow: none;
+}
+[data-page="procurementmonitoring_edit"][data-itemid="page_image_ash8f23hr"] {
+  width: 400px;
+}
+
+
+/* Put  your custom CSS code here */
+
+/*.r-vbar-page .r-content-col .r-body {
+  
+    background: #ffffff;
+    padding-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    box-shadow: 2px 2px #cccccccc;
+}
+
+@media print, (min-width: 768px) {
+    [data-fullwidth] > * > .r-integrated-field.r-vertical-field:not([data-compact]) > [data-itemid], [data-fullwidth].r-ori-vert > * > [data-itemid] {
+        margin-left: 0;
+    }
+}*/

@@ -1,0 +1,1935 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'above-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+					colSpan: 2,
+		
+			
+			// [left, top, right, bottom]
+	margin: [ 0, 0, 0, 15 ],
+		
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+																		{ 
+				cellId: 'c1',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"*", 
+							{END col_grid_0}
+					 ],	
+		
+			heights: [
+								{BEGIN row_grid_0}
+						
+			"%",
+						{END row_grid_0}
+			 
+				],
+	
+		body: [
+				
+				{BEGIN row_grid_0}
+				[
+																{BEGIN cellblock_grid_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section2',
+			widths: ['*'],
+			body: [
+				[{text: 'View Record', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section2_0}
+									"*", 
+								{END col_section2_0}
+															{BEGIN col_section2_1}
+									"*", 
+								{END col_section2_1}
+															{BEGIN col_section2_2}
+									"*", 
+								{END col_section2_2}
+															{BEGIN col_section2_3}
+									"*", 
+								{END col_section2_3}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section2_0}
+				[
+																{BEGIN cellblock_section2_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			fieldName: 'Code',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PPMP Code }","hidden":"{$item_hide_integrated_edit_field41}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c4}
+																							{BEGIN cellblock_section2_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			fieldName: 'Code',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$Code_pdfvalue},"hidden":"{$item_hide_integrated_edit_field1}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c2}
+																							{BEGIN cellblock_section2_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			fieldName: 'EstimatedBudget',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PPMP EstimatedBudget }","hidden":"{$item_hide_integrated_edit_field42}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c}
+																							{BEGIN cellblock_section2_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			fieldName: 'EstimatedBudget',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$EstimatedBudget_pdfvalue},"hidden":"{$item_hide_integrated_edit_field11}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c3}
+											],
+				{END row_section2_0}
+						{BEGIN row_section2_1}
+				[
+																{BEGIN cellblock_section2_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+			fieldName: 'EndUserUnit',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PPMP EndUserUnit }","hidden":"{$item_hide_integrated_edit_field43}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c5}
+																							{BEGIN cellblock_section2_c6}
+{
+	cellId: 'c6',
+	col:0,
+	row:0,
+			fieldName: 'EndUserUnit',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$EndUserUnit_pdfvalue},"hidden":"{$item_hide_integrated_edit_field}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c6}
+																							{BEGIN cellblock_section2_c7}
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+			fieldName: 'QuantitySize',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PPMP QuantitySize }","hidden":"{$item_hide_integrated_edit_field44}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c7}
+																							{BEGIN cellblock_section2_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			fieldName: 'QuantitySize',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$QuantitySize_pdfvalue},"hidden":"{$item_hide_integrated_edit_field4}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c8}
+											],
+				{END row_section2_1}
+						{BEGIN row_section2_2}
+				[
+																{BEGIN cellblock_section2_c9}
+{
+	cellId: 'c9',
+	col:0,
+	row:0,
+			fieldName: 'ModeOfProcurement',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PPMP ModeOfProcurement }","hidden":"{$item_hide_integrated_edit_field45}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c9}
+																							{BEGIN cellblock_section2_c10}
+{
+	cellId: 'c10',
+	col:0,
+	row:0,
+			fieldName: 'ModeOfProcurement',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$ModeOfProcurement_pdfvalue},"hidden":"{$item_hide_integrated_edit_field3}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c10}
+																							{BEGIN cellblock_section2_c11}
+{
+	cellId: 'c11',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c11}
+																							{BEGIN cellblock_section2_c12}
+{
+	cellId: 'c12',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c12}
+											],
+				{END row_section2_2}
+						{BEGIN row_section2_3}
+				[
+																{BEGIN cellblock_section2_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_section2_c1}
+			colSpan: {$colspan_section2_c1},
+			{END colspan_section2_c1}
+		
+		
+	
+			
+	
+			"stack": [
+		
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section',
+			widths: ['*'],
+			body: [
+				[{text: 'General Information', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section_0}
+									"*", 
+								{END col_section_0}
+															{BEGIN col_section_1}
+									"*", 
+								{END col_section_1}
+															{BEGIN col_section_2}
+									"*", 
+								{END col_section_2}
+															{BEGIN col_section_3}
+									"*", 
+								{END col_section_3}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section_0}
+				[
+																{BEGIN cellblock_section_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			fieldName: 'GeneralDescription',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PPMP GeneralDescription }","hidden":"{$item_hide_integrated_edit_field35}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c4}
+																							{BEGIN cellblock_section_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			fieldName: 'GeneralDescription',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$GeneralDescription_pdfvalue},"hidden":"{$item_hide_integrated_edit_field10}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c2}
+																							{BEGIN cellblock_section_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			fieldName: 'ProjectDescription',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PPMP ProjectDescription }","hidden":"{$item_hide_integrated_edit_field36}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c}
+																							{BEGIN cellblock_section_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			fieldName: 'ProjectDescription',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$ProjectDescription_pdfvalue},"hidden":"{$item_hide_integrated_edit_field5}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c3}
+											],
+				{END row_section_0}
+						{BEGIN row_section_1}
+				[
+																{BEGIN cellblock_section_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+			fieldName: 'SourceOfFund',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PPMP SourceOfFund }","hidden":"{$item_hide_integrated_edit_field37}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c5}
+																							{BEGIN cellblock_section_c6}
+{
+	cellId: 'c6',
+	col:0,
+	row:0,
+			fieldName: 'SourceOfFund',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$SourceOfFund_pdfvalue},"hidden":"{$item_hide_integrated_edit_field2}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c6}
+																							{BEGIN cellblock_section_c7}
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+			fieldName: 'TotalMOOEAndCO',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PPMP TotalMOOEAndCO }","hidden":"{$item_hide_integrated_edit_field38}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c7}
+																							{BEGIN cellblock_section_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			fieldName: 'TotalMOOEAndCO',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$TotalMOOEAndCO_pdfvalue},"hidden":"{$item_hide_integrated_edit_field8}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c8}
+											],
+				{END row_section_1}
+						{BEGIN row_section_2}
+				[
+																{BEGIN cellblock_section_c9}
+{
+	cellId: 'c9',
+	col:0,
+	row:0,
+			fieldName: 'SubmittedBy',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PPMP SubmittedBy }","hidden":"{$item_hide_integrated_edit_field39}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c9}
+																							{BEGIN cellblock_section_c10}
+{
+	cellId: 'c10',
+	col:0,
+	row:0,
+			fieldName: 'SubmittedBy',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$SubmittedBy_pdfvalue},"hidden":"{$item_hide_integrated_edit_field6}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c10}
+																							{BEGIN cellblock_section_c11}
+{
+	cellId: 'c11',
+	col:0,
+	row:0,
+			fieldName: 'PreparedBy',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PPMP PreparedBy }","hidden":"{$item_hide_integrated_edit_field40}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c11}
+																							{BEGIN cellblock_section_c12}
+{
+	cellId: 'c12',
+	col:0,
+	row:0,
+			fieldName: 'PreparedBy',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$PreparedBy_pdfvalue},"hidden":"{$item_hide_integrated_edit_field7}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c12}
+											],
+				{END row_section_2}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+ 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section1',
+			widths: ['*'],
+			body: [
+				[{text: 'Others', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section1_0}
+									"*", 
+								{END col_section1_0}
+															{BEGIN col_section1_1}
+									"*", 
+								{END col_section1_1}
+															{BEGIN col_section1_2}
+									"*", 
+								{END col_section1_2}
+															{BEGIN col_section1_3}
+									"*", 
+								{END col_section1_3}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section1_0}
+				[
+																{BEGIN cellblock_section1_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			fieldName: 'January',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PPMP January }","hidden":"{$item_hide_integrated_edit_field23}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c4}
+																							{BEGIN cellblock_section1_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			fieldName: 'January',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$January_pdfvalue},"hidden":"{$item_hide_integrated_edit_field9}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c2}
+																							{BEGIN cellblock_section1_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			fieldName: 'July',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PPMP July }","hidden":"{$item_hide_integrated_edit_field24}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c}
+																							{BEGIN cellblock_section1_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			fieldName: 'July',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$July_pdfvalue},"hidden":"{$item_hide_integrated_edit_field17}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c3}
+											],
+				{END row_section1_0}
+						{BEGIN row_section1_1}
+				[
+																{BEGIN cellblock_section1_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+			fieldName: 'February',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PPMP February }","hidden":"{$item_hide_integrated_edit_field25}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c5}
+																							{BEGIN cellblock_section1_c6}
+{
+	cellId: 'c6',
+	col:0,
+	row:0,
+			fieldName: 'February',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$February_pdfvalue},"hidden":"{$item_hide_integrated_edit_field12}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c6}
+																							{BEGIN cellblock_section1_c7}
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+			fieldName: 'August',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PPMP August }","hidden":"{$item_hide_integrated_edit_field26}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c7}
+																							{BEGIN cellblock_section1_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			fieldName: 'August',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$August_pdfvalue},"hidden":"{$item_hide_integrated_edit_field18}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c8}
+											],
+				{END row_section1_1}
+						{BEGIN row_section1_2}
+				[
+																{BEGIN cellblock_section1_c9}
+{
+	cellId: 'c9',
+	col:0,
+	row:0,
+			fieldName: 'March',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PPMP March }","hidden":"{$item_hide_integrated_edit_field27}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c9}
+																							{BEGIN cellblock_section1_c10}
+{
+	cellId: 'c10',
+	col:0,
+	row:0,
+			fieldName: 'March',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$March_pdfvalue},"hidden":"{$item_hide_integrated_edit_field13}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c10}
+																							{BEGIN cellblock_section1_c11}
+{
+	cellId: 'c11',
+	col:0,
+	row:0,
+			fieldName: 'September',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PPMP September }","hidden":"{$item_hide_integrated_edit_field28}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c11}
+																							{BEGIN cellblock_section1_c12}
+{
+	cellId: 'c12',
+	col:0,
+	row:0,
+			fieldName: 'September',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$September_pdfvalue},"hidden":"{$item_hide_integrated_edit_field19}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c12}
+											],
+				{END row_section1_2}
+						{BEGIN row_section1_3}
+				[
+																{BEGIN cellblock_section1_c13}
+{
+	cellId: 'c13',
+	col:0,
+	row:0,
+			fieldName: 'April',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PPMP April }","hidden":"{$item_hide_integrated_edit_field29}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c13}
+																							{BEGIN cellblock_section1_c14}
+{
+	cellId: 'c14',
+	col:0,
+	row:0,
+			fieldName: 'April',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$April_pdfvalue},"hidden":"{$item_hide_integrated_edit_field14}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c14}
+																							{BEGIN cellblock_section1_c15}
+{
+	cellId: 'c15',
+	col:0,
+	row:0,
+			fieldName: 'October',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PPMP October }","hidden":"{$item_hide_integrated_edit_field30}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c15}
+																							{BEGIN cellblock_section1_c16}
+{
+	cellId: 'c16',
+	col:0,
+	row:0,
+			fieldName: 'October',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$October_pdfvalue},"hidden":"{$item_hide_integrated_edit_field20}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c16}
+											],
+				{END row_section1_3}
+						{BEGIN row_section1_4}
+				[
+																{BEGIN cellblock_section1_c17}
+{
+	cellId: 'c17',
+	col:0,
+	row:0,
+			fieldName: 'May',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PPMP May }","hidden":"{$item_hide_integrated_edit_field31}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c17}
+																							{BEGIN cellblock_section1_c18}
+{
+	cellId: 'c18',
+	col:0,
+	row:0,
+			fieldName: 'May',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$May_pdfvalue},"hidden":"{$item_hide_integrated_edit_field15}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c18}
+																							{BEGIN cellblock_section1_c19}
+{
+	cellId: 'c19',
+	col:0,
+	row:0,
+			fieldName: 'November',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PPMP November }","hidden":"{$item_hide_integrated_edit_field32}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c19}
+																							{BEGIN cellblock_section1_c20}
+{
+	cellId: 'c20',
+	col:0,
+	row:0,
+			fieldName: 'November',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$November_pdfvalue},"hidden":"{$item_hide_integrated_edit_field21}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c20}
+											],
+				{END row_section1_4}
+						{BEGIN row_section1_5}
+				[
+																{BEGIN cellblock_section1_c21}
+{
+	cellId: 'c21',
+	col:0,
+	row:0,
+			fieldName: 'June',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PPMP June }","hidden":"{$item_hide_integrated_edit_field33}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c21}
+																							{BEGIN cellblock_section1_c22}
+{
+	cellId: 'c22',
+	col:0,
+	row:0,
+			fieldName: 'June',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$June_pdfvalue},"hidden":"{$item_hide_integrated_edit_field16}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c22}
+																							{BEGIN cellblock_section1_c23}
+{
+	cellId: 'c23',
+	col:0,
+	row:0,
+			fieldName: 'December',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PPMP December }","hidden":"{$item_hide_integrated_edit_field34}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c23}
+																							{BEGIN cellblock_section1_c24}
+{
+	cellId: 'c24',
+	col:0,
+	row:0,
+			fieldName: 'December',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$December_pdfvalue},"hidden":"{$item_hide_integrated_edit_field22}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c24}
+											],
+				{END row_section1_5}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c1}
+																		{ 
+				cellId: 'c1',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c1',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c1',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_section2_3}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c3}
+											],
+				{END row_grid_0}
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_view_back_list}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+			]
+};
+
+pdfFonts = {$pdfFonts};
+  

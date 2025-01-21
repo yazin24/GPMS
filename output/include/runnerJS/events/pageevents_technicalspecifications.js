@@ -1,0 +1,2 @@
+
+Runner.pages.PageSettings.addPageEvent('dbo.TechnicalSpecifications',Runner.pages.constants.PAGE_ADD,"afterPageReady",function(pageObj,proxy,pageid,inlineRow,inlineObject,row){if(proxy["saved"]){response="The data has been saved.";swal("Success",response,"success").then(function(){window.parent.popup.close();});};});

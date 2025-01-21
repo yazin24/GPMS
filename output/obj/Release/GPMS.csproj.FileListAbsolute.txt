@@ -1,0 +1,16 @@
+C:\Projects\GPMS\output\bin\runnerDotNet.dll
+C:\Projects\GPMS\output\bin\runnerDotNet.pdb
+C:\Projects\GPMS\output\obj\Release\GPMS.csprojResolveAssemblyReference.cache
+C:\Projects\GPMS\output\obj\Release\runnerDotNet.dll
+C:\Projects\GPMS\output\obj\Release\runnerDotNet.pdb
+C:\Users\Laptop5\Desktop\GPMS\output\bin\runnerDotNet.dll
+C:\Users\Laptop5\Desktop\GPMS\output\bin\runnerDotNet.pdb
+C:\Users\Laptop5\Desktop\GPMS\output\obj\Release\GPMS.csprojResolveAssemblyReference.cache
+C:\Users\Laptop5\Desktop\GPMS\output\obj\Release\runnerDotNet.dll
+C:\Users\Laptop5\Desktop\GPMS\output\obj\Release\runnerDotNet.pdb
+C:\Projects\GPMS\output\bin\mscorlib.dll
+C:\Projects\GPMS\output\bin\normidna.nlp
+C:\Projects\GPMS\output\bin\normnfc.nlp
+C:\Projects\GPMS\output\bin\normnfd.nlp
+C:\Projects\GPMS\output\bin\normnfkc.nlp
+C:\Projects\GPMS\output\bin\normnfkd.nlp

@@ -1,0 +1,2880 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'above-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+					colSpan: 2,
+		
+			
+			
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+																		{ 
+				cellId: 'c1',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"*", 
+							{END col_grid_0}
+					 ],	
+		
+			heights: [
+								{BEGIN row_grid_0}
+						
+			"%",
+						{END row_grid_0}
+			 
+				],
+	
+		body: [
+				
+				{BEGIN row_grid_0}
+				[
+																{BEGIN cellblock_grid_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section2',
+			widths: ['*'],
+			body: [
+				[{text: 'View Record', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section2_0}
+									"*", 
+								{END col_section2_0}
+															{BEGIN col_section2_1}
+									"*", 
+								{END col_section2_1}
+															{BEGIN col_section2_2}
+									"*", 
+								{END col_section2_2}
+															{BEGIN col_section2_3}
+									"*", 
+								{END col_section2_3}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section2_0}
+				[
+																{BEGIN cellblock_section2_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			fieldName: 'ProcuringEntity',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument ProcuringEntity }","hidden":"{$item_hide_integrated_edit_field47}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c4}
+																							{BEGIN cellblock_section2_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			fieldName: 'ProcuringEntity',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$ProcuringEntity_pdfvalue},"hidden":"{$item_hide_integrated_edit_field22}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c2}
+																							{BEGIN cellblock_section2_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			fieldName: 'ProjectName',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument ProjectName }","hidden":"{$item_hide_integrated_edit_field48}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c}
+																							{BEGIN cellblock_section2_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			fieldName: 'ProjectName',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$ProjectName_pdfvalue},"hidden":"{$item_hide_integrated_edit_field23}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c3}
+											],
+				{END row_section2_0}
+						{BEGIN row_section2_1}
+				[
+																{BEGIN cellblock_section2_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+			fieldName: 'BACChairperson',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument BACChairperson }","hidden":"{$item_hide_integrated_edit_field49}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c5}
+																							{BEGIN cellblock_section2_c6}
+{
+	cellId: 'c6',
+	col:0,
+	row:0,
+			fieldName: 'BACChairperson',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$BACChairperson_pdfvalue},"hidden":"{$item_hide_integrated_edit_field44}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c6}
+																							{BEGIN cellblock_section2_c7}
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+			fieldName: 'DeliveryDays',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument DeliveryDays }","hidden":"{$item_hide_integrated_edit_field50}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c7}
+																							{BEGIN cellblock_section2_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			fieldName: 'DeliveryDays',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$DeliveryDays_pdfvalue},"hidden":"{$item_hide_integrated_edit_field25}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c8}
+											],
+				{END row_section2_1}
+						{BEGIN row_section2_2}
+				[
+																{BEGIN cellblock_section2_c9}
+{
+	cellId: 'c9',
+	col:0,
+	row:0,
+			fieldName: 'BidReferenceNo',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument BidReferenceNo }","hidden":"{$item_hide_integrated_edit_field51}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c9}
+																							{BEGIN cellblock_section2_c10}
+{
+	cellId: 'c10',
+	col:0,
+	row:0,
+			fieldName: 'BidReferenceNo',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$BidReferenceNo_pdfvalue},"hidden":"{$item_hide_integrated_edit_field24}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c10}
+																							{BEGIN cellblock_section2_c11}
+{
+	cellId: 'c11',
+	col:0,
+	row:0,
+			fieldName: 'BidDocsAvailabilityStart',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument BidDocsAvailabilityStart }","hidden":"{$item_hide_integrated_edit_field52}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c11}
+																							{BEGIN cellblock_section2_c12}
+{
+	cellId: 'c12',
+	col:0,
+	row:0,
+			fieldName: 'BidDocsAvailabilityStart',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$BidDocsAvailabilityStart_pdfvalue},"hidden":"{$item_hide_integrated_edit_field28}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c12}
+											],
+				{END row_section2_2}
+						{BEGIN row_section2_3}
+				[
+																{BEGIN cellblock_section2_c13}
+{
+	cellId: 'c13',
+	col:0,
+	row:0,
+			fieldName: 'ApprovedBudget',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument ApprovedBudget }","hidden":"{$item_hide_integrated_edit_field53}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c13}
+																							{BEGIN cellblock_section2_c14}
+{
+	cellId: 'c14',
+	col:0,
+	row:0,
+			fieldName: 'ApprovedBudget',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$ApprovedBudget_pdfvalue},"hidden":"{$item_hide_integrated_edit_field26}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c14}
+																							{BEGIN cellblock_section2_c15}
+{
+	cellId: 'c15',
+	col:0,
+	row:0,
+			fieldName: 'BidSubmissionDeadline',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument BidSubmissionDeadline }","hidden":"{$item_hide_integrated_edit_field54}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c15}
+																							{BEGIN cellblock_section2_c16}
+{
+	cellId: 'c16',
+	col:0,
+	row:0,
+			fieldName: 'BidSubmissionDeadline',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$BidSubmissionDeadline_pdfvalue},"hidden":"{$item_hide_integrated_edit_field30}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c16}
+											],
+				{END row_section2_3}
+						{BEGIN row_section2_4}
+				[
+																{BEGIN cellblock_section2_c17}
+{
+	cellId: 'c17',
+	col:0,
+	row:0,
+			fieldName: 'BidDocsAvailabilityEnd',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument BidDocsAvailabilityEnd }","hidden":"{$item_hide_integrated_edit_field55}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c17}
+																							{BEGIN cellblock_section2_c18}
+{
+	cellId: 'c18',
+	col:0,
+	row:0,
+			fieldName: 'BidDocsAvailabilityEnd',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$BidDocsAvailabilityEnd_pdfvalue},"hidden":"{$item_hide_integrated_edit_field29}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c18}
+																							{BEGIN cellblock_section2_c19}
+{
+	cellId: 'c19',
+	col:0,
+	row:0,
+			fieldName: 'PreBidConferenceDate',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument PreBidConferenceDate }","hidden":"{$item_hide_integrated_edit_field56}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c19}
+																							{BEGIN cellblock_section2_c20}
+{
+	cellId: 'c20',
+	col:0,
+	row:0,
+			fieldName: 'PreBidConferenceDate',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$PreBidConferenceDate_pdfvalue},"hidden":"{$item_hide_integrated_edit_field32}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c20}
+											],
+				{END row_section2_4}
+						{BEGIN row_section2_5}
+				[
+																{BEGIN cellblock_section2_c21}
+{
+	cellId: 'c21',
+	col:0,
+	row:0,
+			fieldName: 'BidDocsCost',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument BidDocsCost }","hidden":"{$item_hide_integrated_edit_field57}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c21}
+																							{BEGIN cellblock_section2_c22}
+{
+	cellId: 'c22',
+	col:0,
+	row:0,
+			fieldName: 'BidDocsCost',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$BidDocsCost_pdfvalue},"hidden":"{$item_hide_integrated_edit_field31}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c22}
+																							{BEGIN cellblock_section2_c23}
+{
+	cellId: 'c23',
+	col:0,
+	row:0,
+			fieldName: 'BidOpeningdate',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument BidOpeningdate }","hidden":"{$item_hide_integrated_edit_field58}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c23}
+																							{BEGIN cellblock_section2_c24}
+{
+	cellId: 'c24',
+	col:0,
+	row:0,
+			fieldName: 'BidOpeningdate',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$BidOpeningdate_pdfvalue},"hidden":"{$item_hide_integrated_edit_field36}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c24}
+											],
+				{END row_section2_5}
+						{BEGIN row_section2_6}
+				[
+																{BEGIN cellblock_section2_c25}
+{
+	cellId: 'c25',
+	col:0,
+	row:0,
+			fieldName: 'SimilarProjects',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument SimilarProjects }","hidden":"{$item_hide_integrated_edit_field59}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c25}
+																							{BEGIN cellblock_section2_c26}
+{
+	cellId: 'c26',
+	col:0,
+	row:0,
+			fieldName: 'SimilarProjects',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$SimilarProjects_pdfvalue},"hidden":"{$item_hide_integrated_edit_field34}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c26}
+																							{BEGIN cellblock_section2_c27}
+{
+	cellId: 'c27',
+	col:0,
+	row:0,
+			fieldName: 'ContactPersonName',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument ContactPersonName }","hidden":"{$item_hide_integrated_edit_field60}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c27}
+																							{BEGIN cellblock_section2_c28}
+{
+	cellId: 'c28',
+	col:0,
+	row:0,
+			fieldName: 'ContactPersonName',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$ContactPersonName_pdfvalue},"hidden":"{$item_hide_integrated_edit_field38}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c28}
+											],
+				{END row_section2_6}
+						{BEGIN row_section2_7}
+				[
+																{BEGIN cellblock_section2_c29}
+{
+	cellId: 'c29',
+	col:0,
+	row:0,
+			fieldName: 'DatePosted',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument DatePosted }","hidden":"{$item_hide_integrated_edit_field61}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c29}
+																							{BEGIN cellblock_section2_c30}
+{
+	cellId: 'c30',
+	col:0,
+	row:0,
+			fieldName: 'DatePosted',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$DatePosted_pdfvalue},"hidden":"{$item_hide_integrated_edit_field27}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c30}
+																							{BEGIN cellblock_section2_c31}
+{
+	cellId: 'c31',
+	col:0,
+	row:0,
+			fieldName: 'PreBidConferenceVenue',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument PreBidConferenceVenue }","hidden":"{$item_hide_integrated_edit_field62}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c31}
+																							{BEGIN cellblock_section2_c32}
+{
+	cellId: 'c32',
+	col:0,
+	row:0,
+			fieldName: 'PreBidConferenceVenue',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$PreBidConferenceVenue_pdfvalue},"hidden":"{$item_hide_integrated_edit_field33}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c32}
+											],
+				{END row_section2_7}
+						{BEGIN row_section2_8}
+				[
+																{BEGIN cellblock_section2_c33}
+{
+	cellId: 'c33',
+	col:0,
+	row:0,
+			fieldName: 'ContactPersonAddress',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument ContactPersonAddress }","hidden":"{$item_hide_integrated_edit_field63}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c33}
+																							{BEGIN cellblock_section2_c34}
+{
+	cellId: 'c34',
+	col:0,
+	row:0,
+			fieldName: 'ContactPersonAddress',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$ContactPersonAddress_pdfvalue},"hidden":"{$item_hide_integrated_edit_field40}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c34}
+																							{BEGIN cellblock_section2_c35}
+{
+	cellId: 'c35',
+	col:0,
+	row:0,
+			fieldName: 'ContactPersonOffice',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument ContactPersonOffice }","hidden":"{$item_hide_integrated_edit_field64}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c35}
+																							{BEGIN cellblock_section2_c36}
+{
+	cellId: 'c36',
+	col:0,
+	row:0,
+			fieldName: 'ContactPersonOffice',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$ContactPersonOffice_pdfvalue},"hidden":"{$item_hide_integrated_edit_field39}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c36}
+											],
+				{END row_section2_8}
+						{BEGIN row_section2_9}
+				[
+																{BEGIN cellblock_section2_c37}
+{
+	cellId: 'c37',
+	col:0,
+	row:0,
+			fieldName: 'BidSecurity',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument BidSecurity }","hidden":"{$item_hide_integrated_edit_field65}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c37}
+																							{BEGIN cellblock_section2_c38}
+{
+	cellId: 'c38',
+	col:0,
+	row:0,
+			fieldName: 'BidSecurity',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$BidSecurity_pdfvalue},"hidden":"{$item_hide_integrated_edit_field35}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c38}
+																							{BEGIN cellblock_section2_c39}
+{
+	cellId: 'c39',
+	col:0,
+	row:0,
+			fieldName: 'ContactPersonPhone',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument ContactPersonPhone }","hidden":"{$item_hide_integrated_edit_field66}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c39}
+																							{BEGIN cellblock_section2_c40}
+{
+	cellId: 'c40',
+	col:0,
+	row:0,
+			fieldName: 'ContactPersonPhone',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$ContactPersonPhone_pdfvalue},"hidden":"{$item_hide_integrated_edit_field41}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c40}
+											],
+				{END row_section2_9}
+						{BEGIN row_section2_10}
+				[
+																{BEGIN cellblock_section2_c41}
+{
+	cellId: 'c41',
+	col:0,
+	row:0,
+			fieldName: 'BidOpeningVenue',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument BidOpeningVenue }","hidden":"{$item_hide_integrated_edit_field67}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c41}
+																							{BEGIN cellblock_section2_c42}
+{
+	cellId: 'c42',
+	col:0,
+	row:0,
+			fieldName: 'BidOpeningVenue',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$BidOpeningVenue_pdfvalue},"hidden":"{$item_hide_integrated_edit_field37}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c42}
+																							{BEGIN cellblock_section2_c43}
+{
+	cellId: 'c43',
+	col:0,
+	row:0,
+			fieldName: 'Website',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument Website }","hidden":"{$item_hide_integrated_edit_field68}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c43}
+																							{BEGIN cellblock_section2_c44}
+{
+	cellId: 'c44',
+	col:0,
+	row:0,
+			fieldName: 'Website',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$Website_pdfvalue},"hidden":"{$item_hide_integrated_edit_field42}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c44}
+											],
+				{END row_section2_10}
+						{BEGIN row_section2_11}
+				[
+																{BEGIN cellblock_section2_c45}
+{
+	cellId: 'c45',
+	col:0,
+	row:0,
+			fieldName: 'ProjectDescription',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument ProjectDescription }","hidden":"{$item_hide_integrated_edit_field69}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c45}
+																							{BEGIN cellblock_section2_c46}
+{
+	cellId: 'c46',
+	col:0,
+	row:0,
+			fieldName: 'ProjectDescription',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$ProjectDescription_pdfvalue},"hidden":"{$item_hide_integrated_edit_field45}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c46}
+																							{BEGIN cellblock_section2_c47}
+{
+	cellId: 'c47',
+	col:0,
+	row:0,
+			fieldName: 'IssuanceDate',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument IssuanceDate }","hidden":"{$item_hide_integrated_edit_field70}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c47}
+																							{BEGIN cellblock_section2_c48}
+{
+	cellId: 'c48',
+	col:0,
+	row:0,
+			fieldName: 'IssuanceDate',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$IssuanceDate_pdfvalue},"hidden":"{$item_hide_integrated_edit_field43}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c48}
+											],
+				{END row_section2_11}
+						{BEGIN row_section2_12}
+				[
+																{BEGIN cellblock_section2_c49}
+{
+	cellId: 'c49',
+	col:0,
+	row:0,
+			fieldName: 'FundingSource',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument FundingSource }","hidden":"{$item_hide_integrated_edit_field71}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c49}
+																							{BEGIN cellblock_section2_c50}
+{
+	cellId: 'c50',
+	col:0,
+	row:0,
+			fieldName: 'FundingSource',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$FundingSource_pdfvalue},"hidden":"{$item_hide_integrated_edit_field46}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c50}
+																							{BEGIN cellblock_section2_c51}
+{
+	cellId: 'c51',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c51}
+																							{BEGIN cellblock_section2_c52}
+{
+	cellId: 'c52',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c52}
+											],
+				{END row_section2_12}
+						{BEGIN row_section2_13}
+				[
+																{BEGIN cellblock_section2_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_section2_c1}
+			colSpan: {$colspan_section2_c1},
+			{END colspan_section2_c1}
+		
+		
+	
+			
+	
+			"stack": [
+		
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section',
+			widths: ['*'],
+			body: [
+				[{text: 'General Information', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section_0}
+									"*", 
+								{END col_section_0}
+															{BEGIN col_section_1}
+									"*", 
+								{END col_section_1}
+															{BEGIN col_section_2}
+									"*", 
+								{END col_section_2}
+															{BEGIN col_section_3}
+									"*", 
+								{END col_section_3}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section_0}
+				[
+																{BEGIN cellblock_section_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			fieldName: 'SLCCRequirement',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument SLCCRequirement }","hidden":"{$item_hide_integrated_edit_field11}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c4}
+																							{BEGIN cellblock_section_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			fieldName: 'SLCCRequirement',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$SLCCRequirement_pdfvalue},"hidden":"{$item_hide_integrated_edit_field}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c2}
+																							{BEGIN cellblock_section_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			fieldName: 'SubContractingAllowed',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument SubContractingAllowed }","hidden":"{$item_hide_integrated_edit_field12}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c}
+																							{BEGIN cellblock_section_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			fieldName: 'SubContractingAllowed',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$SubContractingAllowed_pdfvalue},"hidden":"{$item_hide_integrated_edit_field1}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c3}
+											],
+				{END row_section_0}
+						{BEGIN row_section_1}
+				[
+																{BEGIN cellblock_section_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+			fieldName: 'BidCurrencies',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument BidCurrencies }","hidden":"{$item_hide_integrated_edit_field13}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c5}
+																							{BEGIN cellblock_section_c6}
+{
+	cellId: 'c6',
+	col:0,
+	row:0,
+			fieldName: 'BidCurrencies',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$BidCurrencies_pdfvalue},"hidden":"{$item_hide_integrated_edit_field2}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c6}
+																							{BEGIN cellblock_section_c7}
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+			fieldName: 'PaymentCurrency',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument PaymentCurrency }","hidden":"{$item_hide_integrated_edit_field14}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c7}
+																							{BEGIN cellblock_section_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			fieldName: 'PaymentCurrency',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$PaymentCurrency_pdfvalue},"hidden":"{$item_hide_integrated_edit_field3}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c8}
+											],
+				{END row_section_1}
+						{BEGIN row_section_2}
+				[
+																{BEGIN cellblock_section_c9}
+{
+	cellId: 'c9',
+	col:0,
+	row:0,
+			fieldName: 'BidSecuritySubDays',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument BidSecuritySubDays }","hidden":"{$item_hide_integrated_edit_field15}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c9}
+																							{BEGIN cellblock_section_c10}
+{
+	cellId: 'c10',
+	col:0,
+	row:0,
+			fieldName: 'BidSecuritySubDays',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$BidSecuritySubDays_pdfvalue},"hidden":"{$item_hide_integrated_edit_field4}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c10}
+																							{BEGIN cellblock_section_c11}
+{
+	cellId: 'c11',
+	col:0,
+	row:0,
+			fieldName: 'ContractSimilarToProject',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument SimilarProjectYears }","hidden":"{$item_hide_integrated_edit_field17}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c11}
+																							{BEGIN cellblock_section_c12}
+{
+	cellId: 'c12',
+	col:0,
+	row:0,
+			fieldName: 'ContractSimilarToProject',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$SimilarProjectYears_pdfvalue},"hidden":"{$item_hide_integrated_edit_field6}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c12}
+											],
+				{END row_section_2}
+						{BEGIN row_section_3}
+				[
+																{BEGIN cellblock_section_c17}
+{
+	cellId: 'c17',
+	col:0,
+	row:0,
+			fieldName: 'BidSecurityCashPercent',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument ContractSimilarToProject }","hidden":"{$item_hide_integrated_edit_field16}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c17}
+																							{BEGIN cellblock_section_c18}
+{
+	cellId: 'c18',
+	col:0,
+	row:0,
+			fieldName: 'BidSecurityCashPercent',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$ContractSimilarToProject_pdfvalue},"hidden":"{$item_hide_integrated_edit_field5}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c18}
+																							{BEGIN cellblock_section_c19}
+{
+	cellId: 'c19',
+	col:0,
+	row:0,
+			fieldName: 'BidSecuritySuretyBondAmount',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument BidSecurityCashPercent }","hidden":"{$item_hide_integrated_edit_field19}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c19}
+																							{BEGIN cellblock_section_c20}
+{
+	cellId: 'c20',
+	col:0,
+	row:0,
+			fieldName: 'BidSecuritySuretyBondAmount',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$BidSecurityCashPercent_pdfvalue},"hidden":"{$item_hide_integrated_edit_field8}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c20}
+											],
+				{END row_section_3}
+						{BEGIN row_section_4}
+				[
+																{BEGIN cellblock_section_c21}
+{
+	cellId: 'c21',
+	col:0,
+	row:0,
+			fieldName: 'BidSecuritySuretyBondPercent',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument BidSecurityCashAmount }","hidden":"{$item_hide_integrated_edit_field18}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c21}
+																							{BEGIN cellblock_section_c22}
+{
+	cellId: 'c22',
+	col:0,
+	row:0,
+			fieldName: 'BidSecuritySuretyBondPercent',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$BidSecurityCashAmount_pdfvalue},"hidden":"{$item_hide_integrated_edit_field7}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c22}
+																							{BEGIN cellblock_section_c23}
+{
+	cellId: 'c23',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument BidSecuritySuretyBondPercent }","hidden":"{$item_hide_integrated_edit_field21}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c23}
+																							{BEGIN cellblock_section_c24}
+{
+	cellId: 'c24',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$BidSecuritySuretyBondPercent_pdfvalue},"hidden":"{$item_hide_integrated_edit_field10}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c24}
+											],
+				{END row_section_4}
+						{BEGIN row_section_5}
+				[
+																{BEGIN cellblock_section_c25}
+{
+	cellId: 'c25',
+	col:0,
+	row:0,
+			fieldName: 'BidSecuritySuretyBondPercent',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel dbo_PhilippineBiddingDocument BidSecuritySuretyBondAmount }","hidden":"{$item_hide_integrated_edit_field20}","bold":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c25}
+																							{BEGIN cellblock_section_c26}
+{
+	cellId: 'c26',
+	col:0,
+	row:0,
+			fieldName: 'BidSecuritySuretyBondPercent',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$BidSecuritySuretyBondAmount_pdfvalue},"hidden":"{$item_hide_integrated_edit_field9}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c26}
+																							{BEGIN cellblock_section_c27}
+{
+	cellId: 'c27',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c27}
+																							{BEGIN cellblock_section_c28}
+{
+	cellId: 'c28',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 10, 0, 0 ],
+		
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c28}
+											],
+				{END row_section_5}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+ 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section1',
+			widths: ['*'],
+			body: [
+				[{text: 'Others', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section1_0}
+									"*", 
+								{END col_section1_0}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section1_0}
+				[
+																{BEGIN cellblock_section1_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			 {BEGIN details_specialconditionsofcontract}
+			{$displayDetailTable_specialconditionsofcontract }
+		{END details_specialconditionsofcontract},
+				
+				
+			 {BEGIN details_scheduleofrequirements}
+			{$displayDetailTable_scheduleofrequirements }
+		{END details_scheduleofrequirements},
+				
+				
+			 {BEGIN details_technicalspecifications}
+			{$displayDetailTable_technicalspecifications }
+		{END details_technicalspecifications},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c1}
+											],
+				{END row_section1_0}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c1}
+																		{ 
+				cellId: 'c1',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c1',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c1',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_section2_13}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c3}
+											],
+				{END row_grid_0}
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_view_back_list}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_view_close}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+																							{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+			]
+};
+
+pdfFonts = {$pdfFonts};
+  
