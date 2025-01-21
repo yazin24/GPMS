@@ -550,16 +550,10 @@ foreach (string _message_block in Model.GetSection("message_block", this)){
 }	
 	</td>
 	}
-										<TD @(Model.displayVar("cell_grid_cell_field3")) @(Model.displayVar("recordattrs")) class="
+									@foreach (string _cellblock_grid_cell_field3 in Model.GetSection("cellblock_grid_cell_field3", this)){
+	<TD @(Model.displayVar("cell_grid_cell_field3")) @(Model.displayVar("recordattrs")) class="
 		r-align-right			" data-cellId="grid_cell_field3" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-page="philippinebiddingdocument_list">
 
-	 
-		<SPAN data-itemtype="custom_button" data-itemid="custom_button" @(Model.displayVar("item_custom_button")) data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-small data-button-item>
-	<A type="button" title class="btn btn-link  btn-xs 
-	" id="New_Button" href="javascript:void(0)" typeid="ib">
-					<span class="glyphicon glyphicon-print"></span>
-										</a>
-</span>
 	 
 		@foreach (string _edit_column in Model.GetSection("edit_column", this)){
 foreach (string _edit_link in Model.GetSection("edit_link", this)){
@@ -584,7 +578,8 @@ foreach (string _view_link in Model.GetSection("view_link", this)){
 }
 	
 	</td>
-								</tr>
+	}
+							</tr>
 										
 											}
 					</tbody>
