@@ -118,9 +118,9 @@ namespace runnerDotNet
 			GlobalVars.suggestAllContent = new XVar(true);
 			GlobalVars.strLastSQL = new XVar("");
 			GlobalVars.showCustomMarkerOnPrint = new XVar(false);
-			GlobalVars.projectBuildKey = new XVar("540_1726116994");
+			GlobalVars.projectBuildKey = new XVar("541_1726116994");
 			GlobalVars.wizardBuildKey = new XVar("41974");
-			GlobalVars.projectBuildNumber = new XVar("540");
+			GlobalVars.projectBuildNumber = new XVar("541");
 			GlobalVars.projectMenus = XVar.Clone(XVar.Array());
 			GlobalVars.projectMenus.InitAndSetArrayItem("main", null);
 			GlobalVars.projectMenus.InitAndSetArrayItem("Observers", null);
