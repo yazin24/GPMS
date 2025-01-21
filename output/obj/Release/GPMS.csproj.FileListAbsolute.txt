@@ -14,3 +14,9 @@ C:\Projects\GPMS\output\bin\normnfc.nlp
 C:\Projects\GPMS\output\bin\normnfd.nlp
 C:\Projects\GPMS\output\bin\normnfkc.nlp
 C:\Projects\GPMS\output\bin\normnfkd.nlp
+C:\Users\Laptop5\Desktop\GPMS\output\bin\mscorlib.dll
+C:\Users\Laptop5\Desktop\GPMS\output\bin\normidna.nlp
+C:\Users\Laptop5\Desktop\GPMS\output\bin\normnfc.nlp
+C:\Users\Laptop5\Desktop\GPMS\output\bin\normnfd.nlp
+C:\Users\Laptop5\Desktop\GPMS\output\bin\normnfkc.nlp
+C:\Users\Laptop5\Desktop\GPMS\output\bin\normnfkd.nlp

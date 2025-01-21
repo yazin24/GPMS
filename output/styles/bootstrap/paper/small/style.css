@@ -8356,8 +8356,8 @@ table.indenttables > * > .rightsindent5 > td.rightscell.rightscell.rightscell.ri
   font-size: 15px;
 }
 .r-vbar-page .r-left [data-logo-cell][data-logo-cell] {
-  background-color: #6610f2;
-  color: rgba(255, 255, 255, 0.75);
+  background-color: #efb11d;
+  color: rgba(0, 0, 0, 0.5);
   height: 39px;
   border: none;
   border-bottom: solid 1px #dee2e6;
@@ -8671,8 +8671,8 @@ table.indenttables > * > .rightsindent5 > td.rightscell.rightscell.rightscell.ri
     font-size: 15px;
   }
   .r-leftbar-top-page > .r-under .r-left [data-logo-cell][data-logo-cell] {
-    background-color: #6610f2;
-    color: rgba(255, 255, 255, 0.75);
+    background-color: #efb11d;
+    color: rgba(0, 0, 0, 0.5);
     height: 39px;
     border: none;
     border-bottom: solid 1px #dee2e6;
