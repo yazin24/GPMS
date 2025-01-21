@@ -348,9 +348,29 @@
 
 }
 											
+@foreach (string _BacMemberName_fieldblock in Model.GetSection("BacMemberName_fieldblock", this)){
+
+<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_BacMemberName"))  r-horizontal-field form-horizontal" data-signal-error-for="BacMemberName@(Model.displayVar("id"))" data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" @(Model.displayVar("item_integrated_search_field3")) data-pageid="@(Model.displayVar("pageid"))" data-field="BacMemberName" data-fieldname="BacMemberName">
+
+
+	<LABEL class="r-search-label control-label" for="@(Model.displayVar("labelfor_BacMemberName"))">
+		@(Model.displayVar("label dbo_BACMembers BacMemberName"))	</label>
+	<div class="r-search-option">
+		@(Model.displayVar("searchtype_BacMemberName"))
+	</div>
+	<div class="r-search-field">
+		@(Model.displayVar("BacMemberName_editcontrol"))	</div>
+	<div class="r-search-field">
+		@(Model.displayVar("BacMemberName_editcontrol1"))
+	</div>
+	
+</div>
+
+}
+											
 @foreach (string _MemberType_fieldblock in Model.GetSection("MemberType_fieldblock", this)){
 
-<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_MemberType"))  r-horizontal-field form-horizontal" data-signal-error-for="MemberType@(Model.displayVar("id"))" data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" @(Model.displayVar("item_integrated_search_field3")) data-pageid="@(Model.displayVar("pageid"))" data-field="MemberType" data-fieldname="MemberType">
+<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_MemberType"))  r-horizontal-field form-horizontal" data-signal-error-for="MemberType@(Model.displayVar("id"))" data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" @(Model.displayVar("item_integrated_search_field4")) data-pageid="@(Model.displayVar("pageid"))" data-field="MemberType" data-fieldname="MemberType">
 
 
 	<LABEL class="r-search-label control-label" for="@(Model.displayVar("labelfor_MemberType"))">
@@ -370,7 +390,7 @@
 											
 @foreach (string _Role_fieldblock in Model.GetSection("Role_fieldblock", this)){
 
-<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_Role"))  r-horizontal-field form-horizontal" data-signal-error-for="Role@(Model.displayVar("id"))" data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" @(Model.displayVar("item_integrated_search_field4")) data-pageid="@(Model.displayVar("pageid"))" data-field="Role" data-fieldname="Role">
+<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_Role"))  r-horizontal-field form-horizontal" data-signal-error-for="Role@(Model.displayVar("id"))" data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" @(Model.displayVar("item_integrated_search_field5")) data-pageid="@(Model.displayVar("pageid"))" data-field="Role" data-fieldname="Role">
 
 
 	<LABEL class="r-search-label control-label" for="@(Model.displayVar("labelfor_Role"))">
@@ -390,7 +410,7 @@
 											
 @foreach (string _ApptTerm_fieldblock in Model.GetSection("ApptTerm_fieldblock", this)){
 
-<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_ApptTerm"))  r-horizontal-field form-horizontal" data-signal-error-for="ApptTerm@(Model.displayVar("id"))" data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" @(Model.displayVar("item_integrated_search_field5")) data-pageid="@(Model.displayVar("pageid"))" data-field="ApptTerm" data-fieldname="ApptTerm">
+<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_ApptTerm"))  r-horizontal-field form-horizontal" data-signal-error-for="ApptTerm@(Model.displayVar("id"))" data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" @(Model.displayVar("item_integrated_search_field6")) data-pageid="@(Model.displayVar("pageid"))" data-field="ApptTerm" data-fieldname="ApptTerm">
 
 
 	<LABEL class="r-search-label control-label" for="@(Model.displayVar("labelfor_ApptTerm"))">
@@ -402,26 +422,6 @@
 		@(Model.displayVar("ApptTerm_editcontrol"))	</div>
 	<div class="r-search-field">
 		@(Model.displayVar("ApptTerm_editcontrol1"))
-	</div>
-	
-</div>
-
-}
-											
-@foreach (string _BacMemberName_fieldblock in Model.GetSection("BacMemberName_fieldblock", this)){
-
-<DIV class="r-integrated-field form-group clearfix @(Model.displayVar("fielddispclass_BacMemberName"))  r-horizontal-field form-horizontal" data-signal-error-for="BacMemberName@(Model.displayVar("id"))" data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" @(Model.displayVar("item_integrated_search_field6")) data-pageid="@(Model.displayVar("pageid"))" data-field="BacMemberName" data-fieldname="BacMemberName">
-
-
-	<LABEL class="r-search-label control-label" for="@(Model.displayVar("labelfor_BacMemberName"))">
-		@(Model.displayVar("label dbo_BACMembers BacMemberName"))	</label>
-	<div class="r-search-option">
-		@(Model.displayVar("searchtype_BacMemberName"))
-	</div>
-	<div class="r-search-field">
-		@(Model.displayVar("BacMemberName_editcontrol"))	</div>
-	<div class="r-search-field">
-		@(Model.displayVar("BacMemberName_editcontrol1"))
 	</div>
 	
 </div>

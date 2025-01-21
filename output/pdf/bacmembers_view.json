@@ -53,8 +53,10 @@ pdfDocument = {
 	
 			"text": [
 		
-				'',
-	  ],
+				
+			{"text":"{$jspagetitlelabel dbo_BACMembers view}","hidden":"{$item_hide_view_header}","fontSize":30},
+				
+		  ],
   "border": [ false, false, false, false ],
               "alignment": 'left',
      
@@ -95,9 +97,7 @@ pdfDocument = {
 					colSpan: 2,
 		
 			
-			// [left, top, right, bottom]
-	margin: [ 0, 0, 0, 15 ],
-		
+			
 	
 			"text": [
 		
@@ -166,594 +166,26 @@ pdfDocument = {
 	
 			"stack": [
 		
-						 
-		{
-		layout: 'panel',
-		
-		table: {
-			tableForm: true,
-			location: 'section2',
-			widths: ['*'],
-			body: [
-				[{text: 'View Record', style: 'tableHeader'}],
-				[{
-					table: {
-						tableForm: true,
-						widths: [
-															{BEGIN col_section2_0}
-									"*", 
-								{END col_section2_0}
-															{BEGIN col_section2_1}
-									"*", 
-								{END col_section2_1}
-															{BEGIN col_section2_2}
-									"*", 
-								{END col_section2_2}
-															{BEGIN col_section2_3}
-									"*", 
-								{END col_section2_3}
-							 						
-						],
-						body: [
-								
-				{BEGIN row_section2_0}
-				[
-																{BEGIN cellblock_section2_c4}
-{
-	cellId: 'c4',
-	col:0,
-	row:0,
-			fieldName: 'BacId',
-			
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			// [left, top, right, bottom]
-	margin: [ 0, 10, 0, 0 ],
-		
-	
-			"text": [
-		
 				
-			{"text":"{$jslabel dbo_BACMembers BacId }","hidden":"{$item_hide_integrated_edit_field6}","bold":true},
+			{"hidden":"{$item_hide_integrated_edit_field}","stack":[{"text":"{$jslabel dbo_BACMembers MemberId }","bold":true},{"text":{$MemberId_pdfvalue}}],"margin":[0,0,0,15]},
 				
-		  ],
-  "border": [false,false,false,true],
-      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
-            "alignment": 'left',
-     
-      
-      },
-
-{END cellblock_section2_c4}
-																							{BEGIN cellblock_section2_c2}
-{
-	cellId: 'c2',
-	col:0,
-	row:0,
-			fieldName: 'BacId',
-			
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			// [left, top, right, bottom]
-	margin: [ 0, 10, 0, 0 ],
-		
-	
-			"text": [
-		
 				
-			{"text":{$BacId_pdfvalue},"hidden":"{$item_hide_integrated_edit_field}"},
+			{"hidden":"{$item_hide_integrated_edit_field1}","stack":[{"text":"{$jslabel dbo_BACMembers BacId }","bold":true},{"text":{$BacId_pdfvalue}}],"margin":[0,0,0,15]},
 				
-		  ],
-  "border": [false,false,false,true],
-      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
-            "alignment": 'left',
-     
-      
-      },
-
-{END cellblock_section2_c2}
-																							{BEGIN cellblock_section2_c}
-{
-	cellId: 'c',
-	col:0,
-	row:0,
-			
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			// [left, top, right, bottom]
-	margin: [ 0, 10, 0, 0 ],
-		
-	
-			"text": [
-		
 				
-			{"text":"{$jslabel dbo_BACMembers MemberType }","hidden":"{$item_hide_integrated_edit_field9}","bold":true},
+			{"hidden":"{$item_hide_integrated_edit_field2}","stack":[{"text":"{$jslabel dbo_BACMembers PersonnelId }","bold":true},{"text":{$PersonnelId_pdfvalue}}],"margin":[0,0,0,15]},
 				
-		  ],
-  "border": [false,false,false,true],
-      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
-            "alignment": 'left',
-     
-      
-      },
-
-{END cellblock_section2_c}
-																							{BEGIN cellblock_section2_c3}
-{
-	cellId: 'c3',
-	col:0,
-	row:0,
-			
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			// [left, top, right, bottom]
-	margin: [ 0, 10, 0, 0 ],
-		
-	
-			"text": [
-		
 				
-			{"text":{$MemberType_pdfvalue},"hidden":"{$item_hide_integrated_edit_field3}"},
+			{"hidden":"{$item_hide_integrated_edit_field3}","stack":[{"text":"{$jslabel dbo_BACMembers BacMemberName }","bold":true},{"text":{$BacMemberName_pdfvalue}}],"margin":[0,0,0,15]},
 				
-		  ],
-  "border": [false,false,false,true],
-      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
-            "alignment": 'left',
-     
-      
-      },
-
-{END cellblock_section2_c3}
-											],
-				{END row_section2_0}
-						{BEGIN row_section2_1}
-				[
-																{BEGIN cellblock_section2_c5}
-{
-	cellId: 'c5',
-	col:0,
-	row:0,
-			fieldName: 'BacMemberName',
-			
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			// [left, top, right, bottom]
-	margin: [ 0, 10, 0, 0 ],
-		
-	
-			"text": [
-		
 				
-			{"text":"{$jslabel dbo_BACMembers BacMemberName }","hidden":"{$item_hide_integrated_edit_field8}","bold":true},
+			{"hidden":"{$item_hide_integrated_edit_field4}","stack":[{"text":"{$jslabel dbo_BACMembers MemberType }","bold":true},{"text":{$MemberType_pdfvalue}}],"margin":[0,0,0,15]},
 				
-		  ],
-  "border": [false,false,false,true],
-      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
-            "alignment": 'left',
-     
-      
-      },
-
-{END cellblock_section2_c5}
-																							{BEGIN cellblock_section2_c6}
-{
-	cellId: 'c6',
-	col:0,
-	row:0,
-			fieldName: 'BacMemberName',
-			
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			// [left, top, right, bottom]
-	margin: [ 0, 10, 0, 0 ],
-		
-	
-			"text": [
-		
 				
-			{"text":{$BacMemberName_pdfvalue},"hidden":"{$item_hide_integrated_edit_field2}"},
+			{"hidden":"{$item_hide_integrated_edit_field5}","stack":[{"text":"{$jslabel dbo_BACMembers Role }","bold":true},{"text":{$Role_pdfvalue}}],"margin":[0,0,0,15]},
 				
-		  ],
-  "border": [false,false,false,true],
-      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
-            "alignment": 'left',
-     
-      
-      },
-
-{END cellblock_section2_c6}
-																							{BEGIN cellblock_section2_c7}
-{
-	cellId: 'c7',
-	col:0,
-	row:0,
-			fieldName: 'MemberType',
-			
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			// [left, top, right, bottom]
-	margin: [ 0, 10, 0, 0 ],
-		
-	
-			"text": [
-		
 				
-			{"text":"{$jslabel dbo_BACMembers ApptTerm }","hidden":"{$item_hide_integrated_edit_field11}","bold":true},
-				
-		  ],
-  "border": [false,false,false,true],
-      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
-            "alignment": 'left',
-     
-      
-      },
-
-{END cellblock_section2_c7}
-																							{BEGIN cellblock_section2_c8}
-{
-	cellId: 'c8',
-	col:0,
-	row:0,
-			fieldName: 'MemberType',
-			
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			// [left, top, right, bottom]
-	margin: [ 0, 10, 0, 0 ],
-		
-	
-			"text": [
-		
-				
-			{"text":{$ApptTerm_pdfvalue},"hidden":"{$item_hide_integrated_edit_field5}"},
-				
-		  ],
-  "border": [false,false,false,true],
-      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
-            "alignment": 'left',
-     
-      
-      },
-
-{END cellblock_section2_c8}
-											],
-				{END row_section2_1}
-						{BEGIN row_section2_2}
-				[
-																{BEGIN cellblock_section2_c9}
-{
-	cellId: 'c9',
-	col:0,
-	row:0,
-			fieldName: 'Role',
-			
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			// [left, top, right, bottom]
-	margin: [ 0, 10, 0, 0 ],
-		
-	
-			"text": [
-		
-				
-			{"text":"{$jslabel dbo_BACMembers Role }","hidden":"{$item_hide_integrated_edit_field10}","bold":true},
-				
-		  ],
-  "border": [false,false,false,true],
-      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
-            "alignment": 'left',
-     
-      
-      },
-
-{END cellblock_section2_c9}
-																							{BEGIN cellblock_section2_c10}
-{
-	cellId: 'c10',
-	col:0,
-	row:0,
-			fieldName: 'Role',
-			
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			// [left, top, right, bottom]
-	margin: [ 0, 10, 0, 0 ],
-		
-	
-			"text": [
-		
-				
-			{"text":{$Role_pdfvalue},"hidden":"{$item_hide_integrated_edit_field4}"},
-				
-		  ],
-  "border": [false,false,false,true],
-      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
-            "alignment": 'left',
-     
-      
-      },
-
-{END cellblock_section2_c10}
-																							{BEGIN cellblock_section2_c11}
-{
-	cellId: 'c11',
-	col:0,
-	row:0,
-			fieldName: 'ApptTerm',
-			
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			// [left, top, right, bottom]
-	margin: [ 0, 10, 0, 0 ],
-		
-	
-			"text": [
-		
-				'',
-	  ],
-  "border": [false,false,false,true],
-      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
-            "alignment": 'left',
-     
-      
-      },
-
-{END cellblock_section2_c11}
-																							{BEGIN cellblock_section2_c12}
-{
-	cellId: 'c12',
-	col:0,
-	row:0,
-			fieldName: 'ApptTerm',
-			
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			// [left, top, right, bottom]
-	margin: [ 0, 10, 0, 0 ],
-		
-	
-			"text": [
-		
-				'',
-	  ],
-  "border": [false,false,false,true],
-      	"borderColor":  ["gray","gray","gray","#f1f1f1"],
-            "alignment": 'left',
-     
-      
-      },
-
-{END cellblock_section2_c12}
-											],
-				{END row_section2_2}
-						{BEGIN row_section2_3}
-				[
-																{BEGIN cellblock_section2_c1}
-{
-	cellId: 'c1',
-	col:0,
-	row:0,
-			
-		
-	//	dynamic colspan/rowspan
-
-					{BEGIN colspan_section2_c1}
-			colSpan: {$colspan_section2_c1},
-			{END colspan_section2_c1}
-		
-		
-	
-			
-	
-			"stack": [
-		
-						 
-		{
-		layout: 'panel',
-		
-		table: {
-			tableForm: true,
-			location: 'section',
-			widths: ['*'],
-			body: [
-				[{text: 'General Information', style: 'tableHeader'}],
-				[{
-					table: {
-						tableForm: true,
-						widths: [
-															{BEGIN col_section_0}
-									"*", 
-								{END col_section_0}
-							 						
-						],
-						body: [
-								
-				{BEGIN row_section_0}
-				[
-																{BEGIN cellblock_section_c1}
-{
-	cellId: 'c1',
-	col:0,
-	row:0,
-			
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			
-	
-			"stack": [
-		
-				'',
-	  ],
-  "border": [ false, false, false, false ],
-              "alignment": 'left',
-     
-      
-      },
-
-{END cellblock_section_c1}
-											],
-				{END row_section_0}
-		
-						]
-					}
-				}]
-
-			]
-		},
-		margin: [0,0,0,15],
-	},
- 
-		{
-		layout: 'panel',
-		
-		table: {
-			tableForm: true,
-			location: 'section1',
-			widths: ['*'],
-			body: [
-				[{text: 'Others', style: 'tableHeader'}],
-				[{
-					table: {
-						tableForm: true,
-						widths: [
-															{BEGIN col_section1_0}
-									"*", 
-								{END col_section1_0}
-							 						
-						],
-						body: [
-								
-				{BEGIN row_section1_0}
-				[
-																{BEGIN cellblock_section1_c1}
-{
-	cellId: 'c1',
-	col:0,
-	row:0,
-			
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			
-	
-			"stack": [
-		
-				'',
-	  ],
-  "border": [ false, false, false, false ],
-              "alignment": 'left',
-     
-      
-      },
-
-{END cellblock_section1_c1}
-											],
-				{END row_section1_0}
-		
-						]
-					}
-				}]
-
-			]
-		},
-		margin: [0,0,0,15],
-	},
-				
-		  ],
-  "border": [ false, false, false, false ],
-              "alignment": 'left',
-     
-      
-      },
-
-{END cellblock_section2_c1}
-																		{ 
-				cellId: 'c1',
-				row:  0,
-				col:  1,
-				text: '',
-				compensateColspan: true
-			},
-														{ 
-				cellId: 'c1',
-				row:  0,
-				col:  2,
-				text: '',
-				compensateColspan: true
-			},
-														{ 
-				cellId: 'c1',
-				row:  0,
-				col:  3,
-				text: '',
-				compensateColspan: true
-			},
-							],
-				{END row_section2_3}
-		
-						]
-					}
-				}]
-
-			]
-		},
-		margin: [0,0,0,15],
-	},
+			{"hidden":"{$item_hide_integrated_edit_field6}","stack":[{"text":"{$jslabel dbo_BACMembers ApptTerm }","bold":true},{"text":{$ApptTerm_pdfvalue}}],"margin":[0,0,0,15]},
 				
 		  ],
   "border": [ false, false, false, false ],
@@ -781,6 +213,7 @@ pdfDocument = {
 		
 		widths: [
 								"*", 
+											"*", 
 					 ],	
 		
 	
@@ -788,7 +221,7 @@ pdfDocument = {
 				
 				[
 																{
-	cellId: 'c2',
+	cellId: 'c1',
 	col:0,
 	row:0,
 			
@@ -803,9 +236,35 @@ pdfDocument = {
 				
 			{"text":"","hidden":"{$item_hide_view_back_list}"},
 				
+				
+			{"text":"","hidden":"{$item_hide_view_close}"},
+				
 		  ],
   "border": [ false, false, false, false ],
               "alignment": 'left',
+     
+      
+      },
+
+																							{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":""},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
      
       
       },

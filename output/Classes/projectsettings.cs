@@ -4031,46 +4031,8 @@ namespace runnerDotNet
 			{
 				return null;
 			}
-			GlobalVars.projectEntities.InitAndSetArrayItem(new XVar("url", "procuringentity", "type", 0), "dbo.ProcuringEntity");
-			GlobalVars.projectEntitiesReverse.InitAndSetArrayItem("dbo.ProcuringEntity", "procuringentity");
-			GlobalVars.projectEntities.InitAndSetArrayItem(new XVar("url", "procurementunit", "type", 0), "dbo.ProcurementUnit");
-			GlobalVars.projectEntitiesReverse.InitAndSetArrayItem("dbo.ProcurementUnit", "procurementunit");
-			GlobalVars.projectEntities.InitAndSetArrayItem(new XVar("url", "bacsecretariat", "type", 0), "dbo.BACSecretariat");
-			GlobalVars.projectEntitiesReverse.InitAndSetArrayItem("dbo.BACSecretariat", "bacsecretariat");
-			GlobalVars.projectEntities.InitAndSetArrayItem(new XVar("url", "personnel", "type", 0), "dbo.Personnel");
-			GlobalVars.projectEntitiesReverse.InitAndSetArrayItem("dbo.Personnel", "personnel");
 			GlobalVars.projectEntities.InitAndSetArrayItem(new XVar("url", "bacmembers", "type", 0), "dbo.BACMembers");
 			GlobalVars.projectEntitiesReverse.InitAndSetArrayItem("dbo.BACMembers", "bacmembers");
-			GlobalVars.projectEntities.InitAndSetArrayItem(new XVar("url", "twg", "type", 0), "dbo.TWG");
-			GlobalVars.projectEntitiesReverse.InitAndSetArrayItem("dbo.TWG", "twg");
-			GlobalVars.projectEntities.InitAndSetArrayItem(new XVar("url", "observer", "type", 0), "dbo.Observer");
-			GlobalVars.projectEntitiesReverse.InitAndSetArrayItem("dbo.Observer", "observer");
-			GlobalVars.projectEntities.InitAndSetArrayItem(new XVar("url", "observerinterest", "type", 0), "dbo.ObserverInterest");
-			GlobalVars.projectEntitiesReverse.InitAndSetArrayItem("dbo.ObserverInterest", "observerinterest");
-			GlobalVars.projectEntities.InitAndSetArrayItem(new XVar("url", "observerreport", "type", 0), "dbo.ObserverReport");
-			GlobalVars.projectEntitiesReverse.InitAndSetArrayItem("dbo.ObserverReport", "observerreport");
-			GlobalVars.projectEntities.InitAndSetArrayItem(new XVar("url", "twgexpertise", "type", 0), "dbo.TWGExpertise");
-			GlobalVars.projectEntitiesReverse.InitAndSetArrayItem("dbo.TWGExpertise", "twgexpertise");
-			GlobalVars.projectEntities.InitAndSetArrayItem(new XVar("url", "ppmp", "type", 0), "dbo.PPMP");
-			GlobalVars.projectEntitiesReverse.InitAndSetArrayItem("dbo.PPMP", "ppmp");
-			GlobalVars.projectEntities.InitAndSetArrayItem(new XVar("url", "procurementmonitoring", "type", 0), "dbo.ProcurementMonitoring");
-			GlobalVars.projectEntitiesReverse.InitAndSetArrayItem("dbo.ProcurementMonitoring", "procurementmonitoring");
-			GlobalVars.projectEntities.InitAndSetArrayItem(new XVar("url", "vw_app", "type", 0), "dbo.vw_APP");
-			GlobalVars.projectEntitiesReverse.InitAndSetArrayItem("dbo.vw_APP", "vw_app");
-			GlobalVars.projectEntities.InitAndSetArrayItem(new XVar("url", "philippinebiddingdocument", "type", 0), "dbo.PhilippineBiddingDocument");
-			GlobalVars.projectEntitiesReverse.InitAndSetArrayItem("dbo.PhilippineBiddingDocument", "philippinebiddingdocument");
-			GlobalVars.projectEntities.InitAndSetArrayItem(new XVar("url", "scheduleofrequirements", "type", 0), "dbo.ScheduleOfRequirements");
-			GlobalVars.projectEntitiesReverse.InitAndSetArrayItem("dbo.ScheduleOfRequirements", "scheduleofrequirements");
-			GlobalVars.projectEntities.InitAndSetArrayItem(new XVar("url", "technicalspecifications", "type", 0), "dbo.TechnicalSpecifications");
-			GlobalVars.projectEntitiesReverse.InitAndSetArrayItem("dbo.TechnicalSpecifications", "technicalspecifications");
-			GlobalVars.projectEntities.InitAndSetArrayItem(new XVar("url", "specialconditionsofcontract", "type", 0), "dbo.SpecialConditionsOfContract");
-			GlobalVars.projectEntitiesReverse.InitAndSetArrayItem("dbo.SpecialConditionsOfContract", "specialconditionsofcontract");
-			GlobalVars.projectEntities.InitAndSetArrayItem(new XVar("url", "bidsandawardscommittee", "type", 0), "dbo.BidsAndAwardsCommittee");
-			GlobalVars.projectEntitiesReverse.InitAndSetArrayItem("dbo.BidsAndAwardsCommittee", "bidsandawardscommittee");
-			GlobalVars.projectEntities.InitAndSetArrayItem(new XVar("url", "headofprocuringentity", "type", 0), "dbo.HeadOfProcuringEntity");
-			GlobalVars.projectEntitiesReverse.InitAndSetArrayItem("dbo.HeadOfProcuringEntity", "headofprocuringentity");
-			GlobalVars.projectEntities.InitAndSetArrayItem(new XVar("url", "systemselections", "type", 0), "dbo.SystemSelections");
-			GlobalVars.projectEntitiesReverse.InitAndSetArrayItem("dbo.SystemSelections", "systemselections");
 			return null;
 		}
 		public static XVar findTable(dynamic _param_table)

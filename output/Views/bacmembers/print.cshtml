@@ -56,18 +56,6 @@
 </span>
 }
 		</div>					</div>
-			 
-				<div class="row">
-			 
-				<DIV data-cellId="top_c4" data-pageid="@(Model.displayVar("pageid"))" @(Model.displayVar("cell_top_c4")) class=" r-ori-vert			col-md-12
-	
-">
-		 
-		@foreach (string _mastertable_block in Model.GetSection("mastertable_block", this)){
-<DIV data-itemtype="master_info" data-itemid="master_info" @(Model.displayVar("item_master_info")) data-pageid="@(Model.displayVar("pageid"))">
-	@(Model.displayVar("showmasterfile"))
-</div>
-}		</div>					</div>
 			</div>		
 }
 									@foreach (string _above_grid_block in Model.GetSection("above-grid_block", this)){
@@ -75,31 +63,14 @@
 	 
 				<div class="row">
 			 
-				<DIV data-cellId="above-grid_c1" data-pageid="@(Model.displayVar("pageid"))" @(Model.displayVar("cell_above-grid_c1")) class="			col-md-12
+				<DIV data-cellId="above-grid_c1" data-pageid="@(Model.displayVar("pageid"))" @(Model.displayVar("cell_above-grid_c1")) class=" r-ori-vert			col-md-12
 	
 ">
 		@foreach (string _firstAboveGridCell in Model.GetSection("firstAboveGridCell", this)){
 		 
 		<SPAN data-itemtype="print_pages" data-itemid="print_pages" @(Model.displayVar("item_print_pages")) data-pageid="@(Model.displayVar("pageid"))" data-small>
 	@(Model.displayVar("print_pages_labelprint_pages"))
-</span>	 
-		foreach (string _inline_cancel in Model.GetSection("inline_cancel", this)){
-<SPAN data-itemtype="grid_inline_cancel" data-itemid="grid_inline_cancel" @(Model.displayVar("item_grid_inline_cancel")) data-pageid="@(Model.displayVar("pageid"))" data-small data-button-item>
-	<A type="button" title="Cancel" class="btn-link   
-	 glyphicon glyphicon-remove" @(Model.displayVar("inlinerevertlink_attrs")) title="Cancel">		
-				
-								</a>
-</span>
-}
-	 
-		foreach (string _inlineadd_link in Model.GetSection("inlineadd_link", this)){
-<SPAN data-itemtype="inline_add" data-itemid="inline_add" @(Model.displayVar("item_inline_add")) data-pageid="@(Model.displayVar("pageid"))" data-small data-button-item>
-	<A type="button" title class="btn btn-primary   
-	" @(Model.displayVar("inlineaddlink_attrs"))>
-							Inline Add			</a>
-</span>
-}
-			}	
+</span>			}	
 	</div>					</div>
 			</div>		
 }
@@ -117,75 +88,11 @@ foreach (string _message_block in Model.GetSection("message_block", this)){
 							">
 									@foreach (string _cellblock_grid_headcell_field in Model.GetSection("cellblock_grid_headcell_field", this)){
 	<TH @(Model.displayVar("cell_grid_headcell_field")) @(Model.displayVar("recordattrs")) class="
-		 r-ori-vert		 @(Model.displayVar("PersonnelId_class"))	" data-field="PersonnelId" data-cellId="grid_headcell_field" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
-
-	 
-		@foreach (string _PersonnelId_fieldheadercolumn in Model.GetSection("PersonnelId_fieldheadercolumn", this)){
-<SPAN data-itemtype="grid_field_label" data-itemid="simple_grid_field7" @(Model.displayVar("item_simple_grid_field7")) data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-field="PersonnelId" data-fieldname="PersonnelId">
-	<span class="text-label">
-		<span>@(Model.displayVar("label dbo_BACMembers PersonnelId"))</span>
-			</span>
-	</span>
-}
-
-	
-	</th>
-	}
-									@foreach (string _cellblock_grid_headcell_field1 in Model.GetSection("cellblock_grid_headcell_field1", this)){
-	<TH @(Model.displayVar("cell_grid_headcell_field1")) @(Model.displayVar("recordattrs")) class="
-		 r-ori-vert		 @(Model.displayVar("MemberType_class"))	" data-field="MemberType" data-cellId="grid_headcell_field1" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
-
-	 
-		@foreach (string _MemberType_fieldheadercolumn in Model.GetSection("MemberType_fieldheadercolumn", this)){
-<SPAN data-itemtype="grid_field_label" data-itemid="simple_grid_field8" @(Model.displayVar("item_simple_grid_field8")) data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-field="MemberType" data-fieldname="MemberType">
-	<span class="text-label">
-		<span>@(Model.displayVar("label dbo_BACMembers MemberType"))</span>
-			</span>
-	</span>
-}
-
-	
-	</th>
-	}
-									@foreach (string _cellblock_grid_headcell_field2 in Model.GetSection("cellblock_grid_headcell_field2", this)){
-	<TH @(Model.displayVar("cell_grid_headcell_field2")) @(Model.displayVar("recordattrs")) class="
-		 r-ori-vert		 @(Model.displayVar("Role_class"))	" data-field="Role" data-cellId="grid_headcell_field2" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
-
-	 
-		@foreach (string _Role_fieldheadercolumn in Model.GetSection("Role_fieldheadercolumn", this)){
-<SPAN data-itemtype="grid_field_label" data-itemid="simple_grid_field9" @(Model.displayVar("item_simple_grid_field9")) data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-field="Role" data-fieldname="Role">
-	<span class="text-label">
-		<span>@(Model.displayVar("label dbo_BACMembers Role"))</span>
-			</span>
-	</span>
-}
-
-	
-	</th>
-	}
-									@foreach (string _cellblock_grid_headcell_field3 in Model.GetSection("cellblock_grid_headcell_field3", this)){
-	<TH @(Model.displayVar("cell_grid_headcell_field3")) @(Model.displayVar("recordattrs")) class="
-		 r-ori-vert		 @(Model.displayVar("ApptTerm_class"))	" data-field="ApptTerm" data-cellId="grid_headcell_field3" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
-
-	 
-		@foreach (string _ApptTerm_fieldheadercolumn in Model.GetSection("ApptTerm_fieldheadercolumn", this)){
-<SPAN data-itemtype="grid_field_label" data-itemid="simple_grid_field10" @(Model.displayVar("item_simple_grid_field10")) data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-field="ApptTerm" data-fieldname="ApptTerm">
-	<span class="text-label">
-		<span>@(Model.displayVar("label dbo_BACMembers ApptTerm"))</span>
-			</span>
-	</span>
-}
-
-	
-	</th>
-	}
-									@foreach (string _cellblock_grid_headcell_field4 in Model.GetSection("cellblock_grid_headcell_field4", this)){
-	<TH @(Model.displayVar("cell_grid_headcell_field4")) @(Model.displayVar("recordattrs")) class="
-		 r-ori-vert		 @(Model.displayVar("MemberId_class"))	" data-field="MemberId" data-cellId="grid_headcell_field4" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
+		 r-ori-vert		 @(Model.displayVar("MemberId_class"))	" data-field="MemberId" data-cellId="grid_headcell_field" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
 
 	 
 		@foreach (string _MemberId_fieldheadercolumn in Model.GetSection("MemberId_fieldheadercolumn", this)){
-<SPAN data-itemtype="grid_field_label" data-itemid="simple_grid_field11" @(Model.displayVar("item_simple_grid_field11")) data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-field="MemberId" data-fieldname="MemberId">
+<SPAN data-itemtype="grid_field_label" data-itemid="simple_grid_field7" @(Model.displayVar("item_simple_grid_field7")) data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-field="MemberId" data-fieldname="MemberId">
 	<span class="text-label">
 		<span>@(Model.displayVar("label dbo_BACMembers MemberId"))</span>
 			</span>
@@ -195,13 +102,13 @@ foreach (string _message_block in Model.GetSection("message_block", this)){
 	
 	</th>
 	}
-									@foreach (string _cellblock_grid_headcell_field5 in Model.GetSection("cellblock_grid_headcell_field5", this)){
-	<TH @(Model.displayVar("cell_grid_headcell_field5")) @(Model.displayVar("recordattrs")) class="
-		 r-ori-vert		 @(Model.displayVar("BacId_class"))	" data-field="BacId" data-cellId="grid_headcell_field5" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
+									@foreach (string _cellblock_grid_headcell_field1 in Model.GetSection("cellblock_grid_headcell_field1", this)){
+	<TH @(Model.displayVar("cell_grid_headcell_field1")) @(Model.displayVar("recordattrs")) class="
+		 r-ori-vert		 @(Model.displayVar("BacId_class"))	" data-field="BacId" data-cellId="grid_headcell_field1" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
 
 	 
 		@foreach (string _BacId_fieldheadercolumn in Model.GetSection("BacId_fieldheadercolumn", this)){
-<SPAN data-itemtype="grid_field_label" data-itemid="simple_grid_field12" @(Model.displayVar("item_simple_grid_field12")) data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-field="BacId" data-fieldname="BacId">
+<SPAN data-itemtype="grid_field_label" data-itemid="simple_grid_field8" @(Model.displayVar("item_simple_grid_field8")) data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-field="BacId" data-fieldname="BacId">
 	<span class="text-label">
 		<span>@(Model.displayVar("label dbo_BACMembers BacId"))</span>
 			</span>
@@ -211,15 +118,79 @@ foreach (string _message_block in Model.GetSection("message_block", this)){
 	
 	</th>
 	}
-									@foreach (string _cellblock_grid_headcell_field6 in Model.GetSection("cellblock_grid_headcell_field6", this)){
-	<TH @(Model.displayVar("cell_grid_headcell_field6")) @(Model.displayVar("recordattrs")) class="
-		 r-ori-vert		 @(Model.displayVar("BacMemberName_class"))	" data-field="BacMemberName" data-cellId="grid_headcell_field6" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
+									@foreach (string _cellblock_grid_headcell_field2 in Model.GetSection("cellblock_grid_headcell_field2", this)){
+	<TH @(Model.displayVar("cell_grid_headcell_field2")) @(Model.displayVar("recordattrs")) class="
+		 r-ori-vert		 @(Model.displayVar("PersonnelId_class"))	" data-field="PersonnelId" data-cellId="grid_headcell_field2" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
+
+	 
+		@foreach (string _PersonnelId_fieldheadercolumn in Model.GetSection("PersonnelId_fieldheadercolumn", this)){
+<SPAN data-itemtype="grid_field_label" data-itemid="simple_grid_field9" @(Model.displayVar("item_simple_grid_field9")) data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-field="PersonnelId" data-fieldname="PersonnelId">
+	<span class="text-label">
+		<span>@(Model.displayVar("label dbo_BACMembers PersonnelId"))</span>
+			</span>
+	</span>
+}
+
+	
+	</th>
+	}
+									@foreach (string _cellblock_grid_headcell_field3 in Model.GetSection("cellblock_grid_headcell_field3", this)){
+	<TH @(Model.displayVar("cell_grid_headcell_field3")) @(Model.displayVar("recordattrs")) class="
+		 r-ori-vert		 @(Model.displayVar("BacMemberName_class"))	" data-field="BacMemberName" data-cellId="grid_headcell_field3" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
 
 	 
 		@foreach (string _BacMemberName_fieldheadercolumn in Model.GetSection("BacMemberName_fieldheadercolumn", this)){
-<SPAN data-itemtype="grid_field_label" data-itemid="simple_grid_field13" @(Model.displayVar("item_simple_grid_field13")) data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-field="BacMemberName" data-fieldname="BacMemberName">
+<SPAN data-itemtype="grid_field_label" data-itemid="simple_grid_field10" @(Model.displayVar("item_simple_grid_field10")) data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-field="BacMemberName" data-fieldname="BacMemberName">
 	<span class="text-label">
 		<span>@(Model.displayVar("label dbo_BACMembers BacMemberName"))</span>
+			</span>
+	</span>
+}
+
+	
+	</th>
+	}
+									@foreach (string _cellblock_grid_headcell_field4 in Model.GetSection("cellblock_grid_headcell_field4", this)){
+	<TH @(Model.displayVar("cell_grid_headcell_field4")) @(Model.displayVar("recordattrs")) class="
+		 r-ori-vert		 @(Model.displayVar("MemberType_class"))	" data-field="MemberType" data-cellId="grid_headcell_field4" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
+
+	 
+		@foreach (string _MemberType_fieldheadercolumn in Model.GetSection("MemberType_fieldheadercolumn", this)){
+<SPAN data-itemtype="grid_field_label" data-itemid="simple_grid_field11" @(Model.displayVar("item_simple_grid_field11")) data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-field="MemberType" data-fieldname="MemberType">
+	<span class="text-label">
+		<span>@(Model.displayVar("label dbo_BACMembers MemberType"))</span>
+			</span>
+	</span>
+}
+
+	
+	</th>
+	}
+									@foreach (string _cellblock_grid_headcell_field5 in Model.GetSection("cellblock_grid_headcell_field5", this)){
+	<TH @(Model.displayVar("cell_grid_headcell_field5")) @(Model.displayVar("recordattrs")) class="
+		 r-ori-vert		 @(Model.displayVar("Role_class"))	" data-field="Role" data-cellId="grid_headcell_field5" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
+
+	 
+		@foreach (string _Role_fieldheadercolumn in Model.GetSection("Role_fieldheadercolumn", this)){
+<SPAN data-itemtype="grid_field_label" data-itemid="simple_grid_field12" @(Model.displayVar("item_simple_grid_field12")) data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-field="Role" data-fieldname="Role">
+	<span class="text-label">
+		<span>@(Model.displayVar("label dbo_BACMembers Role"))</span>
+			</span>
+	</span>
+}
+
+	
+	</th>
+	}
+									@foreach (string _cellblock_grid_headcell_field6 in Model.GetSection("cellblock_grid_headcell_field6", this)){
+	<TH @(Model.displayVar("cell_grid_headcell_field6")) @(Model.displayVar("recordattrs")) class="
+		 r-ori-vert		 @(Model.displayVar("ApptTerm_class"))	" data-field="ApptTerm" data-cellId="grid_headcell_field6" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
+
+	 
+		@foreach (string _ApptTerm_fieldheadercolumn in Model.GetSection("ApptTerm_fieldheadercolumn", this)){
+<SPAN data-itemtype="grid_field_label" data-itemid="simple_grid_field13" @(Model.displayVar("item_simple_grid_field13")) data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-field="ApptTerm" data-fieldname="ApptTerm">
+	<span class="text-label">
+		<span>@(Model.displayVar("label dbo_BACMembers ApptTerm"))</span>
 			</span>
 	</span>
 }
@@ -240,55 +211,7 @@ foreach (string _message_block in Model.GetSection("message_block", this)){
 							">
 									@foreach (string _cellblock_grid_cell_field in Model.GetSection("cellblock_grid_cell_field", this)){
 	<TD @(Model.displayVar("cell_grid_cell_field")) @(Model.displayVar("recordattrs")) class="
-		 r-ori-vert		 @(Model.displayVar("PersonnelId_class"))	" data-field="PersonnelId" data-cellId="grid_cell_field" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
-
-	 
-		@foreach (string _PersonnelId_fieldcolumn in Model.GetSection("PersonnelId_fieldcolumn", this)){
-<SPAN data-itemtype="grid_field" data-itemid="simple_grid_field2" @(Model.displayVar("item_simple_grid_field2")) data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-field="PersonnelId" data-fieldname="PersonnelId" data-default-width>
-@(Model.displayVar("PersonnelId_value"))
-</span>
-}	
-	</td>
-	}
-									@foreach (string _cellblock_grid_cell_field1 in Model.GetSection("cellblock_grid_cell_field1", this)){
-	<TD @(Model.displayVar("cell_grid_cell_field1")) @(Model.displayVar("recordattrs")) class="
-		 r-ori-vert		 @(Model.displayVar("MemberType_class"))	" data-field="MemberType" data-cellId="grid_cell_field1" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
-
-	 
-		@foreach (string _MemberType_fieldcolumn in Model.GetSection("MemberType_fieldcolumn", this)){
-<SPAN data-itemtype="grid_field" data-itemid="simple_grid_field3" @(Model.displayVar("item_simple_grid_field3")) data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-field="MemberType" data-fieldname="MemberType" data-default-width>
-@(Model.displayVar("MemberType_value"))
-</span>
-}	
-	</td>
-	}
-									@foreach (string _cellblock_grid_cell_field2 in Model.GetSection("cellblock_grid_cell_field2", this)){
-	<TD @(Model.displayVar("cell_grid_cell_field2")) @(Model.displayVar("recordattrs")) class="
-		 r-ori-vert		 @(Model.displayVar("Role_class"))	" data-field="Role" data-cellId="grid_cell_field2" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
-
-	 
-		@foreach (string _Role_fieldcolumn in Model.GetSection("Role_fieldcolumn", this)){
-<SPAN data-itemtype="grid_field" data-itemid="simple_grid_field4" @(Model.displayVar("item_simple_grid_field4")) data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-field="Role" data-fieldname="Role" data-default-width>
-@(Model.displayVar("Role_value"))
-</span>
-}	
-	</td>
-	}
-									@foreach (string _cellblock_grid_cell_field3 in Model.GetSection("cellblock_grid_cell_field3", this)){
-	<TD @(Model.displayVar("cell_grid_cell_field3")) @(Model.displayVar("recordattrs")) class="
-		 r-ori-vert		 @(Model.displayVar("ApptTerm_class"))	" data-field="ApptTerm" data-cellId="grid_cell_field3" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
-
-	 
-		@foreach (string _ApptTerm_fieldcolumn in Model.GetSection("ApptTerm_fieldcolumn", this)){
-<SPAN data-itemtype="grid_field" data-itemid="simple_grid_field5" @(Model.displayVar("item_simple_grid_field5")) data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-field="ApptTerm" data-fieldname="ApptTerm" data-default-width>
-@(Model.displayVar("ApptTerm_value"))
-</span>
-}	
-	</td>
-	}
-									@foreach (string _cellblock_grid_cell_field4 in Model.GetSection("cellblock_grid_cell_field4", this)){
-	<TD @(Model.displayVar("cell_grid_cell_field4")) @(Model.displayVar("recordattrs")) class="
-		 r-ori-vert		 @(Model.displayVar("MemberId_class"))	" data-field="MemberId" data-cellId="grid_cell_field4" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
+		 r-ori-vert		 @(Model.displayVar("MemberId_class"))	" data-field="MemberId" data-cellId="grid_cell_field" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
 
 	 
 		@foreach (string _MemberId_fieldcolumn in Model.GetSection("MemberId_fieldcolumn", this)){
@@ -298,9 +221,9 @@ foreach (string _message_block in Model.GetSection("message_block", this)){
 }	
 	</td>
 	}
-									@foreach (string _cellblock_grid_cell_field5 in Model.GetSection("cellblock_grid_cell_field5", this)){
-	<TD @(Model.displayVar("cell_grid_cell_field5")) @(Model.displayVar("recordattrs")) class="
-		 r-ori-vert		 @(Model.displayVar("BacId_class"))	" data-field="BacId" data-cellId="grid_cell_field5" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
+									@foreach (string _cellblock_grid_cell_field1 in Model.GetSection("cellblock_grid_cell_field1", this)){
+	<TD @(Model.displayVar("cell_grid_cell_field1")) @(Model.displayVar("recordattrs")) class="
+		 r-ori-vert		 @(Model.displayVar("BacId_class"))	" data-field="BacId" data-cellId="grid_cell_field1" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
 
 	 
 		@foreach (string _BacId_fieldcolumn in Model.GetSection("BacId_fieldcolumn", this)){
@@ -310,14 +233,62 @@ foreach (string _message_block in Model.GetSection("message_block", this)){
 }	
 	</td>
 	}
-									@foreach (string _cellblock_grid_cell_field6 in Model.GetSection("cellblock_grid_cell_field6", this)){
-	<TD @(Model.displayVar("cell_grid_cell_field6")) @(Model.displayVar("recordattrs")) class="
-		 r-ori-vert		 @(Model.displayVar("BacMemberName_class"))	" data-field="BacMemberName" data-cellId="grid_cell_field6" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
+									@foreach (string _cellblock_grid_cell_field2 in Model.GetSection("cellblock_grid_cell_field2", this)){
+	<TD @(Model.displayVar("cell_grid_cell_field2")) @(Model.displayVar("recordattrs")) class="
+		 r-ori-vert		 @(Model.displayVar("PersonnelId_class"))	" data-field="PersonnelId" data-cellId="grid_cell_field2" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
+
+	 
+		@foreach (string _PersonnelId_fieldcolumn in Model.GetSection("PersonnelId_fieldcolumn", this)){
+<SPAN data-itemtype="grid_field" data-itemid="simple_grid_field2" @(Model.displayVar("item_simple_grid_field2")) data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-field="PersonnelId" data-fieldname="PersonnelId" data-default-width>
+@(Model.displayVar("PersonnelId_value"))
+</span>
+}	
+	</td>
+	}
+									@foreach (string _cellblock_grid_cell_field3 in Model.GetSection("cellblock_grid_cell_field3", this)){
+	<TD @(Model.displayVar("cell_grid_cell_field3")) @(Model.displayVar("recordattrs")) class="
+		 r-ori-vert		 @(Model.displayVar("BacMemberName_class"))	" data-field="BacMemberName" data-cellId="grid_cell_field3" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
 
 	 
 		@foreach (string _BacMemberName_fieldcolumn in Model.GetSection("BacMemberName_fieldcolumn", this)){
-<SPAN data-itemtype="grid_field" data-itemid="simple_grid_field6" @(Model.displayVar("item_simple_grid_field6")) data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-field="BacMemberName" data-fieldname="BacMemberName" data-default-width>
+<SPAN data-itemtype="grid_field" data-itemid="simple_grid_field3" @(Model.displayVar("item_simple_grid_field3")) data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-field="BacMemberName" data-fieldname="BacMemberName" data-default-width>
 @(Model.displayVar("BacMemberName_value"))
+</span>
+}	
+	</td>
+	}
+									@foreach (string _cellblock_grid_cell_field4 in Model.GetSection("cellblock_grid_cell_field4", this)){
+	<TD @(Model.displayVar("cell_grid_cell_field4")) @(Model.displayVar("recordattrs")) class="
+		 r-ori-vert		 @(Model.displayVar("MemberType_class"))	" data-field="MemberType" data-cellId="grid_cell_field4" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
+
+	 
+		@foreach (string _MemberType_fieldcolumn in Model.GetSection("MemberType_fieldcolumn", this)){
+<SPAN data-itemtype="grid_field" data-itemid="simple_grid_field4" @(Model.displayVar("item_simple_grid_field4")) data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-field="MemberType" data-fieldname="MemberType" data-default-width>
+@(Model.displayVar("MemberType_value"))
+</span>
+}	
+	</td>
+	}
+									@foreach (string _cellblock_grid_cell_field5 in Model.GetSection("cellblock_grid_cell_field5", this)){
+	<TD @(Model.displayVar("cell_grid_cell_field5")) @(Model.displayVar("recordattrs")) class="
+		 r-ori-vert		 @(Model.displayVar("Role_class"))	" data-field="Role" data-cellId="grid_cell_field5" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
+
+	 
+		@foreach (string _Role_fieldcolumn in Model.GetSection("Role_fieldcolumn", this)){
+<SPAN data-itemtype="grid_field" data-itemid="simple_grid_field5" @(Model.displayVar("item_simple_grid_field5")) data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-field="Role" data-fieldname="Role" data-default-width>
+@(Model.displayVar("Role_value"))
+</span>
+}	
+	</td>
+	}
+									@foreach (string _cellblock_grid_cell_field6 in Model.GetSection("cellblock_grid_cell_field6", this)){
+	<TD @(Model.displayVar("cell_grid_cell_field6")) @(Model.displayVar("recordattrs")) class="
+		 r-ori-vert		 @(Model.displayVar("ApptTerm_class"))	" data-field="ApptTerm" data-cellId="grid_cell_field6" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))">
+
+	 
+		@foreach (string _ApptTerm_fieldcolumn in Model.GetSection("ApptTerm_fieldcolumn", this)){
+<SPAN data-itemtype="grid_field" data-itemid="simple_grid_field6" @(Model.displayVar("item_simple_grid_field6")) data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-field="ApptTerm" data-fieldname="ApptTerm" data-default-width>
+@(Model.displayVar("ApptTerm_value"))
 </span>
 }	
 	</td>
@@ -335,49 +306,49 @@ foreach (string _message_block in Model.GetSection("message_block", this)){
 							">
 									@foreach (string _cellblock_grid_footcell_field in Model.GetSection("cellblock_grid_footcell_field", this)){
 	<TD @(Model.displayVar("cell_grid_footcell_field")) @(Model.displayVar("recordattrs")) class="
-		 r-ori-vert		 @(Model.displayVar("PersonnelId_class"))	" data-cellId="grid_footcell_field" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-page="bacmembers_print">
+		 r-ori-vert		 @(Model.displayVar("MemberId_class"))	" data-cellId="grid_footcell_field" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-page="bacmembers_print">
 
 	
 	</td>
 	}
 									@foreach (string _cellblock_grid_footcell_field1 in Model.GetSection("cellblock_grid_footcell_field1", this)){
 	<TD @(Model.displayVar("cell_grid_footcell_field1")) @(Model.displayVar("recordattrs")) class="
-		 r-ori-vert		 @(Model.displayVar("MemberType_class"))	" data-cellId="grid_footcell_field1" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-page="bacmembers_print">
+		 r-ori-vert		 @(Model.displayVar("BacId_class"))	" data-cellId="grid_footcell_field1" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-page="bacmembers_print">
 
 	
 	</td>
 	}
 									@foreach (string _cellblock_grid_footcell_field2 in Model.GetSection("cellblock_grid_footcell_field2", this)){
 	<TD @(Model.displayVar("cell_grid_footcell_field2")) @(Model.displayVar("recordattrs")) class="
-		 r-ori-vert		 @(Model.displayVar("Role_class"))	" data-cellId="grid_footcell_field2" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-page="bacmembers_print">
+		 r-ori-vert		 @(Model.displayVar("PersonnelId_class"))	" data-cellId="grid_footcell_field2" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-page="bacmembers_print">
 
 	
 	</td>
 	}
 									@foreach (string _cellblock_grid_footcell_field3 in Model.GetSection("cellblock_grid_footcell_field3", this)){
 	<TD @(Model.displayVar("cell_grid_footcell_field3")) @(Model.displayVar("recordattrs")) class="
-		 r-ori-vert		 @(Model.displayVar("ApptTerm_class"))	" data-cellId="grid_footcell_field3" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-page="bacmembers_print">
+		 r-ori-vert		 @(Model.displayVar("BacMemberName_class"))	" data-cellId="grid_footcell_field3" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-page="bacmembers_print">
 
 	
 	</td>
 	}
 									@foreach (string _cellblock_grid_footcell_field4 in Model.GetSection("cellblock_grid_footcell_field4", this)){
 	<TD @(Model.displayVar("cell_grid_footcell_field4")) @(Model.displayVar("recordattrs")) class="
-		 r-ori-vert		 @(Model.displayVar("MemberId_class"))	" data-cellId="grid_footcell_field4" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-page="bacmembers_print">
+		 r-ori-vert		 @(Model.displayVar("MemberType_class"))	" data-cellId="grid_footcell_field4" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-page="bacmembers_print">
 
 	
 	</td>
 	}
 									@foreach (string _cellblock_grid_footcell_field5 in Model.GetSection("cellblock_grid_footcell_field5", this)){
 	<TD @(Model.displayVar("cell_grid_footcell_field5")) @(Model.displayVar("recordattrs")) class="
-		 r-ori-vert		 @(Model.displayVar("BacId_class"))	" data-cellId="grid_footcell_field5" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-page="bacmembers_print">
+		 r-ori-vert		 @(Model.displayVar("Role_class"))	" data-cellId="grid_footcell_field5" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-page="bacmembers_print">
 
 	
 	</td>
 	}
 									@foreach (string _cellblock_grid_footcell_field6 in Model.GetSection("cellblock_grid_footcell_field6", this)){
 	<TD @(Model.displayVar("cell_grid_footcell_field6")) @(Model.displayVar("recordattrs")) class="
-		 r-ori-vert		 @(Model.displayVar("BacMemberName_class"))	" data-cellId="grid_footcell_field6" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-page="bacmembers_print">
+		 r-ori-vert		 @(Model.displayVar("ApptTerm_class"))	" data-cellId="grid_footcell_field6" data-pageid="@(Model.displayVar("pageid"))" data-record-id="@(Model.displayVar("recId"))" data-page="bacmembers_print">
 
 	
 	</td>

@@ -29,8 +29,6 @@ namespace runnerDotNet
 			string defController = "Global", defPage = "menu";
 
 
-			defController = "Landing";
-			defPage = "Route";
 
 			var landingUrl = CommonFunctions.GetIndexPage(); // get landing page from business template
 			if (!new string[] {"\\", "/", ""}.Contains(landingUrl))
@@ -144,9 +142,6 @@ namespace runnerDotNet
 		public ActionResult Route()
 		{
 			string tName = "", pType = "", prms = "";
-				tName = "procurementmonitoring";
-			pType = "list";
-							prms = String.Concat("page=", "list");
 			return Redirect( MVCFunctions.projectPath().ToString() + MVCFunctions.GetTableLink( tName, pType, prms ).ToString() );
 		}
 	}

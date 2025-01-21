@@ -271,42 +271,6 @@
   </ItemGroup>
   <ItemGroup>
 
-    <Compile Include="include\procuringentity_TableEvents.vb"/>
-
-    <Compile Include="include\procurementunit_TableEvents.vb"/>
-
-    <Compile Include="include\bacsecretariat_TableEvents.vb"/>
-
-    <Compile Include="include\personnel_TableEvents.vb"/>
-
-    <Compile Include="include\bacmembers_TableEvents.vb"/>
-
-    <Compile Include="include\twg_TableEvents.vb"/>
-
-    <Compile Include="include\observer_TableEvents.vb"/>
-
-    <Compile Include="include\observerinterest_TableEvents.vb"/>
-
-    <Compile Include="include\observerreport_TableEvents.vb"/>
-
-    <Compile Include="include\twgexpertise_TableEvents.vb"/>
-
-    <Compile Include="include\ppmp_TableEvents.vb"/>
-
-    <Compile Include="include\procurementmonitoring_TableEvents.vb"/>
-
-
-    <Compile Include="include\philippinebiddingdocument_TableEvents.vb"/>
-
-    <Compile Include="include\scheduleofrequirements_TableEvents.vb"/>
-
-    <Compile Include="include\technicalspecifications_TableEvents.vb"/>
-
-    <Compile Include="include\specialconditionsofcontract_TableEvents.vb"/>
-
-
-    <Compile Include="include\headofprocuringentity_TableEvents.vb"/>
-
     <Compile Include="include\CommonEvents.vb"/>
     <Compile Include="include\CustomExpressions.vb"/>
   </ItemGroup>

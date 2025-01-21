@@ -1,78 +1,32 @@
-[data-cellid="left_c0"][data-page="bacmembers_list"][data-cellid="left_c0"][data-page="bacmembers_list"][data-cellid="left_c0"][data-page="bacmembers_list"] {
-  font-weight: bold;
-}
-[data-cellid="left_c1"][data-page="bacmembers_list"][data-cellid="left_c1"][data-page="bacmembers_list"][data-cellid="left_c1"][data-page="bacmembers_list"] {
-  font-weight: bold;
-}
-[data-cellid="grid_headcell_field"][data-page="bacmembers_list"][data-cellid="grid_headcell_field"][data-page="bacmembers_list"][data-cellid="grid_headcell_field"][data-page="bacmembers_list"] {
-  width: 20%;
-}
-[data-cellid="grid_cell_field"][data-page="bacmembers_list"][data-cellid="grid_cell_field"][data-page="bacmembers_list"][data-cellid="grid_cell_field"][data-page="bacmembers_list"] {
-  width: 20%;
-}
 [data-cellid="grid_footcell_field"][data-page="bacmembers_list"][data-cellid="grid_footcell_field"][data-page="bacmembers_list"][data-cellid="grid_footcell_field"][data-page="bacmembers_list"] {
-  width: 20%;
   white-space: nowrap;
-}
-[data-cellid="grid_headcell_field1"][data-page="bacmembers_list"][data-cellid="grid_headcell_field1"][data-page="bacmembers_list"][data-cellid="grid_headcell_field1"][data-page="bacmembers_list"] {
-  width: 20%;
-}
-[data-cellid="grid_cell_field1"][data-page="bacmembers_list"][data-cellid="grid_cell_field1"][data-page="bacmembers_list"][data-cellid="grid_cell_field1"][data-page="bacmembers_list"] {
-  width: 20%;
 }
 [data-cellid="grid_footcell_field1"][data-page="bacmembers_list"][data-cellid="grid_footcell_field1"][data-page="bacmembers_list"][data-cellid="grid_footcell_field1"][data-page="bacmembers_list"] {
-  width: 20%;
   white-space: nowrap;
-}
-[data-cellid="grid_headcell_field2"][data-page="bacmembers_list"][data-cellid="grid_headcell_field2"][data-page="bacmembers_list"][data-cellid="grid_headcell_field2"][data-page="bacmembers_list"] {
-  width: 20%;
-}
-[data-cellid="grid_cell_field2"][data-page="bacmembers_list"][data-cellid="grid_cell_field2"][data-page="bacmembers_list"][data-cellid="grid_cell_field2"][data-page="bacmembers_list"] {
-  width: 20%;
 }
 [data-cellid="grid_footcell_field2"][data-page="bacmembers_list"][data-cellid="grid_footcell_field2"][data-page="bacmembers_list"][data-cellid="grid_footcell_field2"][data-page="bacmembers_list"] {
-  width: 20%;
   white-space: nowrap;
 }
-[data-cellid="grid_headcell_field3"][data-page="bacmembers_list"][data-cellid="grid_headcell_field3"][data-page="bacmembers_list"][data-cellid="grid_headcell_field3"][data-page="bacmembers_list"] {
-  width: 15%;
-}
-[data-cellid="grid_cell_field3"][data-page="bacmembers_list"][data-cellid="grid_cell_field3"][data-page="bacmembers_list"][data-cellid="grid_cell_field3"][data-page="bacmembers_list"] {
-  width: 15%;
-}
 [data-cellid="grid_footcell_field3"][data-page="bacmembers_list"][data-cellid="grid_footcell_field3"][data-page="bacmembers_list"][data-cellid="grid_footcell_field3"][data-page="bacmembers_list"] {
-  width: 15%;
+  white-space: nowrap;
+}
+[data-cellid="grid_footcell_field4"][data-page="bacmembers_list"][data-cellid="grid_footcell_field4"][data-page="bacmembers_list"][data-cellid="grid_footcell_field4"][data-page="bacmembers_list"] {
+  white-space: nowrap;
+}
+[data-cellid="grid_footcell_field5"][data-page="bacmembers_list"][data-cellid="grid_footcell_field5"][data-page="bacmembers_list"][data-cellid="grid_footcell_field5"][data-page="bacmembers_list"] {
+  white-space: nowrap;
+}
+[data-cellid="grid_footcell_field6"][data-page="bacmembers_list"][data-cellid="grid_footcell_field6"][data-page="bacmembers_list"][data-cellid="grid_footcell_field6"][data-page="bacmembers_list"] {
   white-space: nowrap;
 }
 [data-cellid="grid_headcell_checkbox"][data-page="bacmembers_list"][data-cellid="grid_headcell_checkbox"][data-page="bacmembers_list"][data-cellid="grid_headcell_checkbox"][data-page="bacmembers_list"] {
-  width: 15%;
-}
-[data-cellid="grid_cell_checkbox"][data-page="bacmembers_list"][data-cellid="grid_cell_checkbox"][data-page="bacmembers_list"][data-cellid="grid_cell_checkbox"][data-page="bacmembers_list"] {
-  width: 15%;
-}
-[data-cellid="grid_footcell_checkbox"][data-page="bacmembers_list"][data-cellid="grid_footcell_checkbox"][data-page="bacmembers_list"][data-cellid="grid_footcell_checkbox"][data-page="bacmembers_list"] {
-  width: 15%;
-}
-[data-cellid="grid_headcell_field4"][data-page="bacmembers_list"][data-cellid="grid_headcell_field4"][data-page="bacmembers_list"][data-cellid="grid_headcell_field4"][data-page="bacmembers_list"] {
-  width: 10%;
-}
-[data-cellid="grid_headcell_field5"][data-page="bacmembers_list"][data-cellid="grid_headcell_field5"][data-page="bacmembers_list"][data-cellid="grid_headcell_field5"][data-page="bacmembers_list"] {
-  width: 10%;
-}
-[data-cellid="grid_headcell_field6"][data-page="bacmembers_list"][data-cellid="grid_headcell_field6"][data-page="bacmembers_list"][data-cellid="grid_headcell_field6"][data-page="bacmembers_list"] {
-  width: 10%;
-  white-space: nowrap;
+  width: 30px;
 }
 [data-cellid="grid_headcell_icons"][data-page="bacmembers_list"][data-cellid="grid_headcell_icons"][data-page="bacmembers_list"][data-cellid="grid_headcell_icons"][data-page="bacmembers_list"] {
   width: 30px;
 }
 [data-cellid="grid_cell_icons"][data-page="bacmembers_list"][data-cellid="grid_cell_icons"][data-page="bacmembers_list"][data-cellid="grid_cell_icons"][data-page="bacmembers_list"] {
   white-space: nowrap;
-}
-[data-page="bacmembers_list"][data-itemid="add"] > .btn {
-  background-color: #efb11d;
-  background-image: none;
-  text-shadow: none;
 }
 [data-page="bacmembers_list"][data-itemid="page_image_ash8f23hr"] {
   width: 400px;

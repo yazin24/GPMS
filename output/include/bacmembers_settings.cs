@@ -19,11 +19,11 @@ namespace runnerDotNet
 			tdataArray["bacmembers"][".ShortName"] = "bacmembers";
 			tdataArray["bacmembers"][".OwnerID"] = "";
 			tdataArray["bacmembers"][".OriginalTable"] = "dbo.BACMembers";
-			tdataArray["bacmembers"][".pagesByType"] = MVCFunctions.my_json_decode(new XVar("{\"add\":[\"add\"],\"edit\":[\"edit\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}"));
+			tdataArray["bacmembers"][".pagesByType"] = MVCFunctions.my_json_decode(new XVar("{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}"));
 			tdataArray["bacmembers"][".originalPagesByType"] = tdataArray["bacmembers"][".pagesByType"];
-			tdataArray["bacmembers"][".pages"] = CommonFunctions.types2pages(MVCFunctions.my_json_decode(new XVar("{\"add\":[\"add\"],\"edit\":[\"edit\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}")));
+			tdataArray["bacmembers"][".pages"] = CommonFunctions.types2pages(MVCFunctions.my_json_decode(new XVar("{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}")));
 			tdataArray["bacmembers"][".originalPages"] = tdataArray["bacmembers"][".pages"];
-			tdataArray["bacmembers"][".defaultPages"] = MVCFunctions.my_json_decode(new XVar("{\"add\":\"add\",\"edit\":\"edit\",\"list\":\"list\",\"print\":\"print\",\"search\":\"search\",\"view\":\"view\"}"));
+			tdataArray["bacmembers"][".defaultPages"] = MVCFunctions.my_json_decode(new XVar("{\"add\":\"add\",\"edit\":\"edit\",\"export\":\"export\",\"import\":\"import\",\"list\":\"list\",\"print\":\"print\",\"search\":\"search\",\"view\":\"view\"}"));
 			tdataArray["bacmembers"][".originalDefaultPages"] = tdataArray["bacmembers"][".defaultPages"];
 			fieldLabelsArray["bacmembers"] = SettingsMap.GetArray();
 			fieldToolTipsArray["bacmembers"] = SettingsMap.GetArray();
@@ -38,27 +38,24 @@ namespace runnerDotNet
 				fieldLabelsArray["bacmembers"]["English"]["MemberId"] = "Member Id";
 				fieldToolTipsArray["bacmembers"]["English"]["MemberId"] = "";
 				placeHoldersArray["bacmembers"]["English"]["MemberId"] = "";
-				fieldLabelsArray["bacmembers"]["English"]["BacId"] = "B.A.C";
+				fieldLabelsArray["bacmembers"]["English"]["BacId"] = "Bac Id";
 				fieldToolTipsArray["bacmembers"]["English"]["BacId"] = "";
 				placeHoldersArray["bacmembers"]["English"]["BacId"] = "";
-				fieldLabelsArray["bacmembers"]["English"]["PersonnelId"] = "Bac Member Name";
+				fieldLabelsArray["bacmembers"]["English"]["PersonnelId"] = "Personnel Id";
 				fieldToolTipsArray["bacmembers"]["English"]["PersonnelId"] = "";
 				placeHoldersArray["bacmembers"]["English"]["PersonnelId"] = "";
+				fieldLabelsArray["bacmembers"]["English"]["BacMemberName"] = "Bac Member Name";
+				fieldToolTipsArray["bacmembers"]["English"]["BacMemberName"] = "";
+				placeHoldersArray["bacmembers"]["English"]["BacMemberName"] = "";
 				fieldLabelsArray["bacmembers"]["English"]["MemberType"] = "Member Type";
 				fieldToolTipsArray["bacmembers"]["English"]["MemberType"] = "";
 				placeHoldersArray["bacmembers"]["English"]["MemberType"] = "";
 				fieldLabelsArray["bacmembers"]["English"]["Role"] = "Role";
 				fieldToolTipsArray["bacmembers"]["English"]["Role"] = "";
 				placeHoldersArray["bacmembers"]["English"]["Role"] = "";
-				fieldLabelsArray["bacmembers"]["English"]["ApptTerm"] = "Appointment Term";
+				fieldLabelsArray["bacmembers"]["English"]["ApptTerm"] = "Appt Term";
 				fieldToolTipsArray["bacmembers"]["English"]["ApptTerm"] = "";
 				placeHoldersArray["bacmembers"]["English"]["ApptTerm"] = "";
-				fieldLabelsArray["bacmembers"]["English"]["BacMemberName"] = "Bac Member Name";
-				fieldToolTipsArray["bacmembers"]["English"]["BacMemberName"] = "";
-				placeHoldersArray["bacmembers"]["English"]["BacMemberName"] = "";
-				pageTitlesArray["bacmembers"]["English"]["add"] = "Add new record here";
-				pageTitlesArray["bacmembers"]["English"]["edit"] = "Edit details as";
-				pageTitlesArray["bacmembers"]["English"]["view"] = "";
 				if(XVar.Pack(MVCFunctions.count(fieldToolTipsArray["bacmembers"]["English"])))
 				{
 					tdataArray["bacmembers"][".isUseToolTips"] = true;
@@ -81,7 +78,7 @@ namespace runnerDotNet
 			if(XVar.Pack(GlobalVars.pages[Constants.PAGE_EDIT]))
 			{
 				tdataArray["bacmembers"][".edit"] = true;
-				tdataArray["bacmembers"][".afterEditAction"] = 0;
+				tdataArray["bacmembers"][".afterEditAction"] = 1;
 				tdataArray["bacmembers"][".closePopupAfterEdit"] = 1;
 				tdataArray["bacmembers"][".afterEditActionDetTable"] = "";
 			}
@@ -90,7 +87,7 @@ namespace runnerDotNet
 				tdataArray["bacmembers"][".add"] = true;
 				tdataArray["bacmembers"][".afterAddAction"] = 1;
 				tdataArray["bacmembers"][".closePopupAfterAdd"] = 1;
-				tdataArray["bacmembers"][".afterAddActionDetTable"] = "Detail tables not found!";
+				tdataArray["bacmembers"][".afterAddActionDetTable"] = "";
 			}
 			if(XVar.Pack(GlobalVars.pages[Constants.PAGE_LIST]))
 			{
@@ -121,9 +118,9 @@ namespace runnerDotNet
 
 			tdataArray["bacmembers"][".ajaxCodeSnippetAdded"] = false;
 			tdataArray["bacmembers"][".buttonsAdded"] = false;
-			tdataArray["bacmembers"][".addPageEvents"] = true;
+			tdataArray["bacmembers"][".addPageEvents"] = false;
 			tdataArray["bacmembers"][".isUseTimeForSearch"] = false;
-			tdataArray["bacmembers"][".badgeColor"] = "E8926F";
+			tdataArray["bacmembers"][".badgeColor"] = "CD853F";
 			tdataArray["bacmembers"][".allSearchFields"] = SettingsMap.GetArray();
 			tdataArray["bacmembers"][".filterFields"] = SettingsMap.GetArray();
 			tdataArray["bacmembers"][".requiredSearchFields"] = SettingsMap.GetArray();
@@ -241,8 +238,9 @@ namespace runnerDotNet
 			edata = new XVar("EditFormat", "Lookup wizard");
 			edata["weekdayMessage"] = new XVar("message", "", "messageType", "Text");
 			edata["weekdays"] = "[]";
-			edata["LookupType"] = 2;
+			edata["LookupType"] = 1;
 			edata["LookupTable"] = "dbo.BidsAndAwardsCommittee";
+			edata["LookupConnId"] = "GPMS_at_194_233_66_31_1433";
 			edata["autoCompleteFieldsOnEdit"] = 0;
 			edata["autoCompleteFields"] = SettingsMap.GetArray();
 			edata["LCType"] = 0;
@@ -250,18 +248,17 @@ namespace runnerDotNet
 			edata["LinkFieldType"] = 3;
 			edata["DisplayField"] = "BacName";
 			edata["LookupOrderBy"] = "";
+			edata["SimpleAdd"] = true;
 			edata["SelectSize"] = 1;
-			edata["IsRequired"] = true;
 			edata["acceptFileTypesHtml"] = "";
 			edata["maxNumberOfFiles"] = 1;
 			edata["controlWidth"] = 200;
 			edata["validateAs"] = SettingsMap.GetArray();
 			edata["validateAs"]["basicValidate"] = SettingsMap.GetArray();
 			edata["validateAs"]["customMessages"] = SettingsMap.GetArray();
-			edata["validateAs"]["basicValidate"].Add("IsRequired");
 			fdata["EditFormats"]["edit"] = edata;
 			fdata["isSeparate"] = false;
-			fdata["defaultSearchOption"] = "Equals";
+			fdata["defaultSearchOption"] = "Contains";
 			fdata["searchOptionsList"] = new XVar(0, "Contains", 1, "Equals", 2, "Starts with", 3, "More than", 4, "Less than", 5, "Between", 6, "Empty", 7, Constants.NOT_EMPTY);
 			fdata["filterTotals"] = 0;
 			fdata["filterMultiSelect"] = 0;
@@ -294,29 +291,27 @@ namespace runnerDotNet
 			edata = new XVar("EditFormat", "Lookup wizard");
 			edata["weekdayMessage"] = new XVar("message", "", "messageType", "Text");
 			edata["weekdays"] = "[]";
-			edata["LookupType"] = 2;
+			edata["LookupType"] = 1;
 			edata["LookupTable"] = "dbo.Personnel";
-			edata["autoCompleteFieldsOnEdit"] = 1;
+			edata["LookupConnId"] = "GPMS_at_194_233_66_31_1433";
+			edata["autoCompleteFieldsOnEdit"] = 0;
 			edata["autoCompleteFields"] = SettingsMap.GetArray();
-			edata["autoCompleteFields"].Add(new XVar("masterF", "BacMemberName", "lookupF", "Name"));
 			edata["LCType"] = 0;
 			edata["LinkField"] = "Id";
 			edata["LinkFieldType"] = 3;
-			edata["DisplayField"] = "Name + ' ' + '-'  + ' ' + Rank";
-			edata["CustomDisplay"] = "true";
+			edata["DisplayField"] = "Name";
 			edata["LookupOrderBy"] = "";
+			edata["SimpleAdd"] = true;
 			edata["SelectSize"] = 1;
-			edata["IsRequired"] = true;
 			edata["acceptFileTypesHtml"] = "";
 			edata["maxNumberOfFiles"] = 1;
 			edata["controlWidth"] = 200;
 			edata["validateAs"] = SettingsMap.GetArray();
 			edata["validateAs"]["basicValidate"] = SettingsMap.GetArray();
 			edata["validateAs"]["customMessages"] = SettingsMap.GetArray();
-			edata["validateAs"]["basicValidate"].Add("IsRequired");
 			fdata["EditFormats"]["edit"] = edata;
 			fdata["isSeparate"] = false;
-			fdata["defaultSearchOption"] = "Equals";
+			fdata["defaultSearchOption"] = "Contains";
 			fdata["searchOptionsList"] = new XVar(0, "Contains", 1, "Equals", 2, "Starts with", 3, "More than", 4, "Less than", 5, "Between", 6, "Empty", 7, Constants.NOT_EMPTY);
 			fdata["filterTotals"] = 0;
 			fdata["filterMultiSelect"] = 0;
@@ -340,7 +335,8 @@ namespace runnerDotNet
 			fdata["FullName"] = "BacMemberName";
 			fdata["UploadFolder"] = "files";
 			fdata["ViewFormats"] = SettingsMap.GetArray();
-			vdata = new XVar("ViewFormat", "Custom");
+			vdata = new XVar("ViewFormat", "");
+			vdata["NeedEncode"] = true;
 			vdata["truncateText"] = true;
 			vdata["NumberOfChars"] = 80;
 			fdata["ViewFormats"]["view"] = vdata;
@@ -385,7 +381,8 @@ namespace runnerDotNet
 			fdata["FullName"] = "MemberType";
 			fdata["UploadFolder"] = "files";
 			fdata["ViewFormats"] = SettingsMap.GetArray();
-			vdata = new XVar("ViewFormat", "Custom");
+			vdata = new XVar("ViewFormat", "");
+			vdata["NeedEncode"] = true;
 			vdata["truncateText"] = true;
 			vdata["NumberOfChars"] = 80;
 			fdata["ViewFormats"]["view"] = vdata;
@@ -428,7 +425,8 @@ namespace runnerDotNet
 			fdata["FullName"] = "[Role]";
 			fdata["UploadFolder"] = "files";
 			fdata["ViewFormats"] = SettingsMap.GetArray();
-			vdata = new XVar("ViewFormat", "Custom");
+			vdata = new XVar("ViewFormat", "");
+			vdata["NeedEncode"] = true;
 			vdata["truncateText"] = true;
 			vdata["NumberOfChars"] = 80;
 			fdata["ViewFormats"]["view"] = vdata;
@@ -471,7 +469,8 @@ namespace runnerDotNet
 			fdata["FullName"] = "ApptTerm";
 			fdata["UploadFolder"] = "files";
 			fdata["ViewFormats"] = SettingsMap.GetArray();
-			vdata = new XVar("ViewFormat", "Custom");
+			vdata = new XVar("ViewFormat", "");
+			vdata["NeedEncode"] = true;
 			vdata["truncateText"] = true;
 			vdata["NumberOfChars"] = 80;
 			fdata["ViewFormats"]["view"] = vdata;
@@ -509,21 +508,6 @@ namespace runnerDotNet
 			CommonFunctions.changeTextControlsToDate(new XVar("dbo.BACMembers"));
 			GlobalVars.detailsTablesData["dbo.BACMembers"] = SettingsMap.GetArray();
 			GlobalVars.masterTablesData["dbo.BACMembers"] = SettingsMap.GetArray();
-
-
-			strOriginalDetailsTable = "dbo.BidsAndAwardsCommittee";
-			masterParams = SettingsMap.GetArray();
-			masterParams["mDataSourceTable"] = "dbo.BidsAndAwardsCommittee";
-			masterParams["mOriginalTable"] = strOriginalDetailsTable;
-			masterParams["mShortTable"] = "bidsandawardscommittee";
-			masterParams["masterKeys"] = SettingsMap.GetArray();
-			masterParams["detailKeys"] = SettingsMap.GetArray();
-			masterParams["type"] = Constants.PAGE_LIST;
-			GlobalVars.masterTablesData["dbo.BACMembers"][0] = masterParams;
-			GlobalVars.masterTablesData["dbo.BACMembers"][0]["masterKeys"] = SettingsMap.GetArray();
-			GlobalVars.masterTablesData["dbo.BACMembers"][0]["masterKeys"].Add("Id");
-			GlobalVars.masterTablesData["dbo.BACMembers"][0]["detailKeys"] = SettingsMap.GetArray();
-			GlobalVars.masterTablesData["dbo.BACMembers"][0]["detailKeys"].Add("BacId");
 
 SQLEntity obj = null;
 var protoArray = SettingsMap.GetArray();
@@ -682,7 +666,7 @@ queryData_Array["bacmembers"] = obj;
 				
 		
 			tdataArray["bacmembers"][".sqlquery"] = queryData_Array["bacmembers"];
-			tdataArray["bacmembers"][".hasEvents"] = true;
+			tdataArray["bacmembers"][".hasEvents"] = false;
 		}
 	}
 

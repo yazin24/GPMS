@@ -171,26 +171,7 @@ namespace runnerDotNet
 		{
 			dynamic connectionsIds = XVar.Array();
 			connectionsIds = XVar.Clone(XVar.Array());
-			connectionsIds.InitAndSetArrayItem("GPMS_at_194_233_66_31_1433", "dbo.ProcuringEntity");
-			connectionsIds.InitAndSetArrayItem("GPMS_at_194_233_66_31_1433", "dbo.ProcurementUnit");
-			connectionsIds.InitAndSetArrayItem("GPMS_at_194_233_66_31_1433", "dbo.BACSecretariat");
-			connectionsIds.InitAndSetArrayItem("GPMS_at_194_233_66_31_1433", "dbo.Personnel");
 			connectionsIds.InitAndSetArrayItem("GPMS_at_194_233_66_31_1433", "dbo.BACMembers");
-			connectionsIds.InitAndSetArrayItem("GPMS_at_194_233_66_31_1433", "dbo.TWG");
-			connectionsIds.InitAndSetArrayItem("GPMS_at_194_233_66_31_1433", "dbo.Observer");
-			connectionsIds.InitAndSetArrayItem("GPMS_at_194_233_66_31_1433", "dbo.ObserverInterest");
-			connectionsIds.InitAndSetArrayItem("GPMS_at_194_233_66_31_1433", "dbo.ObserverReport");
-			connectionsIds.InitAndSetArrayItem("GPMS_at_194_233_66_31_1433", "dbo.TWGExpertise");
-			connectionsIds.InitAndSetArrayItem("GPMS_at_194_233_66_31_1433", "dbo.PPMP");
-			connectionsIds.InitAndSetArrayItem("GPMS_at_194_233_66_31_1433", "dbo.ProcurementMonitoring");
-			connectionsIds.InitAndSetArrayItem("GPMS_at_194_233_66_31_1433", "dbo.vw_APP");
-			connectionsIds.InitAndSetArrayItem("GPMS_at_194_233_66_31_1433", "dbo.PhilippineBiddingDocument");
-			connectionsIds.InitAndSetArrayItem("GPMS_at_194_233_66_31_1433", "dbo.ScheduleOfRequirements");
-			connectionsIds.InitAndSetArrayItem("GPMS_at_194_233_66_31_1433", "dbo.TechnicalSpecifications");
-			connectionsIds.InitAndSetArrayItem("GPMS_at_194_233_66_31_1433", "dbo.SpecialConditionsOfContract");
-			connectionsIds.InitAndSetArrayItem("GPMS_at_194_233_66_31_1433", "dbo.BidsAndAwardsCommittee");
-			connectionsIds.InitAndSetArrayItem("GPMS_at_194_233_66_31_1433", "dbo.HeadOfProcuringEntity");
-			connectionsIds.InitAndSetArrayItem("GPMS_at_194_233_66_31_1433", "dbo.SystemSelections");
 			this._tablesConnectionIds = connectionsIds;
 			return null;
 		}
